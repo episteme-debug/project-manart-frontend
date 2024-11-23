@@ -1,0 +1,31 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+.img_buscador{
+    background-color: #dabe9a;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+}
+.img_buscador img{
+    height: 23vh;
+    width: 23vh;
+    margin-left: 10vh;
+}
+.img_buscador input{
+    height: 7vh;
+    width: 100vh;
+    font-size: large;
+    margin-left: 5vh;
+}
+#links{
+    margin-left: 5vh;
+}
+#links a{
+    margin-left: 5vh;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
