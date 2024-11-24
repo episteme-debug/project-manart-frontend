@@ -1,62 +1,317 @@
-body{
-    background-color: rgb(228, 220, 199);
-    margin: 0%;
-    padding: 0%;
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
     width: 100%;
+    font-family: "Urbanist", sans-serif;
 }
 
-header{
-    width: 100%;
-    height: 15vh;
-    background-color: rgb(38, 30, 21);
-    display: flex;
-    justify-content: center;
-}
-main{
-    min-height: 85vh;
-    width: 100%;
-    margin: 40px;
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
 }
 
-#tablas_manart{
-    background-color: white;
-    width: 80%;
-    min-height: auto;
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    margin: auto;
+.h1 {
+    font-size: 3.8rem;
 }
 
-table {
-    width: 90%;
-    height: auto;
-
-}
-
-th, td {
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #806949; /* Café oscuro */
-    color:rgb(37, 23, 65);
-    border: 1px solid rgb(79, 83, 75);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-}
-
-th:hover {
-    background-color: #f0cea6;
-    border: 1px solid rgb(0, 0, 0);
-}
-td:hover {
-    background-color: #92816c;
-    border: 1px solid rgb(0, 0, 0);
-}
-h1{
-    font-size: 5vh;
+.h1,
+.h2,
+.h3 {
     color: white;
-    letter-spacing: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    text-shadow: 2px 4px 6px rgb(153, 138, 121);
+    font-weight: 600;
+    line-height: 1.3;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ion-icon {
+    font-size: 1.8rem;
+
+    transition: color 0.3s ease;
+}
+
+img {
+    height: auto;
+    display: block;
+}
+
+button,
+input {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+input {
+    width: 100%;
+}
+
+.seccion {
+    padding-block: 35px;
+}
+
+.tiene-bg-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn {
+    font-weight: 600;
+    max-width: max-content;
+    padding: 20px 30px;
+    border-radius: 3px;
+    transition: 1s ease;
+}
+
+.btn-primary {
+    background-color: black;
+    color: white;
+}
+
+.btn-primary:is(:hover, :focus) {
+    background-color: hsl(41, 74%, 70%);
+}
+
+button {
+    cursor: pointer;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+/*HEADER*/
+
+.container {
+    padding-inline: 15px;
+}
+
+.header {
+    position: relative;
+    padding-block-end: 60px;
+}
+
+.alerta {
+    background-color: hsl(60, 68%, 85%);
+    color: black;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-block: 15px;
+
+}
+
+.header-top {
+    position: unset;
+    padding-block: 26px 0;
+    background-color: white;
+    margin-bottom: 30px;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    gap: 20px;
+}
+
+.header .input-busqueda,
+.acciones-header .navbar {
+    display: block;
+}
+
+.campo-buscar {
+
+    border: 2px solid hsl(148, 20%, 38%, 0.2);
+    border-radius: 3px;
+    padding: 10px 20px;
+    padding-inline-end: 40px;
+    transition: 0.25s ease;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.campo-buscar::placeholder {
+    color: hsl(0, 0%, 61%);
+}
+
+.btn-buscar {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 48%;
+    margin-left: -45px;
+}
+
+.btn-buscar ion-icon {
+    color: hsl(0, 1%, 15%);
+}
+
+.logo {
+    margin-inline-start: 60px;
+}
+
+.acciones-header {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.acciones-header-btn {
+    position: relative;
+}
+
+.acciones-header-btn .btn-insignia {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    min-width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+.acciones-header-btn:last-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.acciones-header-btn data {
+    font-weight: bold;
+
+}
+
+.navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding-block: 18px;
+}
+
+.navbar .navbar-lista {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.navbar .navbar-link {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.navbar .navbar-link {
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.navbar .navbar-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: black;
+    transition: transform 0.25s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.navbar .navbar-link:hover::after,
+.navbar .navbar-link:focus::after {
+    transform: scaleX(1);
+}
+    /*Hero*/
+    .hero {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .hero-card {
+        background-color: hsl(0, 0%, 88%);
+        padding: 80px 90px;
+    }
+
+    .tiene-scrollbar {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero-texto {
+        font-size: 1.2rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        margin-block: 20px 20px;
+        padding: 1%;
+        max-width: 38ch;
+    }
+
+    .hero .precio {
+        font-size: 1.3rem;
+        color: white;
+        font-weight: 600;
+        margin-block-end: 40px;
+    }
+
+    .tiene-scrollbar {
+        display: flex;
+        gap: 15px;
+        overflow-x: auto;
+        padding-block-end: 15px;
+        margin-block-end: -15px;
+        scroll-snap-type: inline mandatory;
+    }
+
+    .scrollbar-item {
+        min-width: 100%;
+        scroll-snap-type: start;
+    }
+
+    .tiene-scrollbar::-webkit-scrollbar {
+        width: 16px;
+        height: 16px;
+    }
+
+    .tiene-scrollbar::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .tiene-scrollbar::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 8px;
+        border: 3px solid #f1f1f1;
+    }
+
+    .tiene-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
