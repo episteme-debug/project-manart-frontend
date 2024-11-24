@@ -11,7 +11,14 @@
     <header>
         <div class="img_buscador">
         <img src="img/Manart_img.jpg" alt="">
-        <input type="search" placeholder="Buscar productos">
+        
+    <div id="is-relative">
+        <input type="text" placeholder="Buscar productos"> 
+        <span id="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height= 4vh  width= 4vh><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+        </span>
+      </div>
+  
         <div id="links">
             <a href="http://">Inicio</a>
             <a href="http://">Region de colombia</a>
@@ -19,6 +26,27 @@
         </div>
         </div>
         </header>
-   <div></div> 
+        <main>
+   <div id="imagenes">
+    <img src="img/Manart_img.jpg" alt=""></div> 
+    <div id="Informacion_productos">
+    <p id="nombreProbucto"></p>
+    <p id="Precio"></p>
+    <p>Decripcion: <span id="Descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque voluptates autem, error sequi explicabo expedita ipsa officiis repellendus commodi doloremque nobis cum ratione hic nesciunt ullam facere. Voluptas, unde exercitationem?</span>
+    </p>
+   <!--   <p>Region: <span></span></p>
+    <p>Material: <span></span></p> -->
+    <p><span>1</span> Cantidad Vendidas</p>
+    <p><span id="Disponibles">2</span> Disponibles</p>
+    <div >
+        <button class="masymenos">-</button><input type="text" min="0" class="masymenos-input"readonly><button class="masymenos">+</button>
+      <div id="botones_Añadir_comprar">
+          <button class="carro">Añadir al Carrito</button> <button id="Comprar">Comprar Ahora</button>
+      </div>
+     </div>
+</div>
+
+</main>
+<script src="js/script.js"></script>
 </body>
 </html>
