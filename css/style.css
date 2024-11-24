@@ -17,14 +17,25 @@ h4 {
     padding: 0;
 }
 
-.h1 {
-    font-size: 3.8rem;
+span,
+ion-icon {
+    display: block;
 }
 
-.h1,
+.h1 {
+    font-size: 3.8rem;
+    color: white;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.h2 {
+    font-size: 1.9rem;
+}
+
 .h2,
 .h3 {
-    color: white;
+    color: black;
     font-weight: 600;
     line-height: 1.3;
 }
@@ -93,6 +104,15 @@ button {
     cursor: pointer;
 }
 
+.btn-link{
+    font-size: 1.2rem;
+    color: hsl(0, 1%, 15%);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    transition: 0.25 ease;
+}
 *,
 *::before,
 *::after {
@@ -251,67 +271,121 @@ button {
 .navbar .navbar-link:focus::after {
     transform: scaleX(1);
 }
-    /*Hero*/
-    .hero {
-        margin-top: 0;
-        padding-top: 0;
-    }
 
-    .hero-card {
-        background-color: hsl(0, 0%, 88%);
-        padding: 80px 90px;
-    }
+/*Hero*/
+.hero {
+    margin-top: 0;
+    padding-top: 0;
+}
 
-    .tiene-scrollbar {
-        margin: 0;
-        padding: 0;
-    }
+.hero-card {
+    background-color: hsl(0, 0%, 88%);
+    padding: 80px 90px;
+}
 
-    .hero-texto {
-        font-size: 1.2rem;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        margin-block: 20px 20px;
-        padding: 1%;
-        max-width: 38ch;
-    }
+.tiene-scrollbar {
+    margin: 0;
+    padding: 0;
+}
 
-    .hero .precio {
-        font-size: 1.3rem;
-        color: white;
-        font-weight: 600;
-        margin-block-end: 40px;
-    }
+.hero-texto {
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    margin-block: 20px 20px;
+    padding: 1%;
+    max-width: 38ch;
+}
 
-    .tiene-scrollbar {
-        display: flex;
-        gap: 15px;
-        overflow-x: auto;
-        padding-block-end: 15px;
-        margin-block-end: -15px;
-        scroll-snap-type: inline mandatory;
-    }
+.hero .precio {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    margin-block-end: 40px;
+}
 
-    .scrollbar-item {
-        min-width: 100%;
-        scroll-snap-type: start;
-    }
+.tiene-scrollbar {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-block-end: 15px;
+    margin-block-end: -15px;
+    scroll-snap-type: inline mandatory;
+}
 
-    .tiene-scrollbar::-webkit-scrollbar {
-        width: 16px;
-        height: 16px;
-    }
+.scrollbar-item {
+    min-width: 100%;
+    scroll-snap-type: start;
+}
 
-    .tiene-scrollbar::-webkit-scrollbar-track {
-        background: #f1f1f1;
-    }
+.tiene-scrollbar::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
 
-    .tiene-scrollbar::-webkit-scrollbar-thumb {
-        background: #888;
-        border-radius: 8px;
-        border: 3px solid #f1f1f1;
-    }
+.tiene-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
 
-    .tiene-scrollbar::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    }
+.tiene-scrollbar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+    border: 3px solid #f1f1f1;
+}
+
+.tiene-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/*CATEGORIÍAS*/
+
+.categorias {
+    padding-block-start: 0;
+}
+
+.categorias-lista {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-inline: 30px;
+    padding-block: 30px;
+    background-image: url(/img/categorias-fondo.jpg);
+    background-color: rgba(255, 255, 255, 0.2);
+    background-blend-mode: overlay;
+}
+
+.categorias-card {
+    background-color: white;
+    min-height: 400px;
+    padding: 30px 40px;
+    padding-block-end: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 2px 2px 4px rgb(133, 131, 131);
+}
+
+.categorias-card .card-titulo {
+    margin-block-end: 12px;
+}
+
+
+.categorias-card h2, a{
+    z-index: 5;
+}
+/* Asegura que estén por encima de la imagen de fondo */
+.categorias-card .tiene-bg-image {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    bottom: 20%;
+    left: 10%;
+    z-index: 1;
+    transition: 0.5 ease;
+}
+
+.categorias-card a{
+    position: absolute;
+    bottom: 5%;
+}
