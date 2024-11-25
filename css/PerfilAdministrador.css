@@ -1,0 +1,27 @@
+main{
+    width: 100vh;
+    height: 80vh;
+    background-color: gray;
+    margin-left: 55vh;
+}
+h1{
+    text-align: center;
+}
+#formulario h2{
+    text-align: center;
+}
+#formulario  {
+  align-content: center;
+  margin: 5vh;
+}
+#formulario label{
+    font-size: x-large;
+}
+#formulario input{
+    width: 88vh;
+}
+#formulario button{
+    margin-left: 40vh;   
+    background-color: #ffd737;
+    border-color: #ffd737;
+}
