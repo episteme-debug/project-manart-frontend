@@ -1,0 +1,134 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0%;
+    margin: 0%;
+    background-color: white;
+}
+.img_buscador{
+    background-color: #dabe9a;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+}
+.img_buscador img{
+    height: 23vh;
+    width: 23vh;
+    margin-left: 3vh;
+}
+.img_buscador input{
+    height: 7vh;
+    width: 105vh;
+    font-size: large;
+    border-radius: 5px;
+}
+div#is-relative{
+    max-width: 420px;
+    position: relative;
+    margin: 1vh;
+  }
+   #icon{
+    position: absolute;
+    display: block;
+    bottom: .5rem;
+    right: -15.5rem;
+    
+    user-select: none;
+    cursor: pointer;
+  }
+
+#links{
+    margin-left: 45vh;
+}
+#links a{
+    margin-left: 5vh;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+ #links a:hover{
+    border-bottom:2px #ffd737 solid;
+}
+main{
+    width: auto;
+    height: 100vh;
+    margin: 4vh;
+    display: flex;
+    box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
+    background-color:rgba(231, 226, 226, 0.774);
+}
+#nombreProbucto{
+    font-size: xx-large;
+    color: black;
+}
+#Producto{ 
+    display: flex;
+    color: gray;
+}
+#Producto img{
+   margin: 5vh;
+   width: 75vh;
+   height: 85vh;
+   border: 1px gray solid;
+   border-radius: 10px;
+}
+#Informacion_productos{
+    margin-left: 10vh;
+    font-size: large;
+    margin-right: 6vh;
+}
+.masymenos ,.masymenos1 {
+    width: 5vh;
+    height: 4.5vh;
+    background-color: white;
+    border: 2px gray solid;
+    transition:background-color 0.2s;
+}
+.masymenos-input{
+    width: 5vh;
+    height: 3.6vh;
+    background-color: white;
+    border: 2px gray solid;
+    text-align: center;
+}
+ .carro{
+    width: 25vh;
+    height: 6vh; 
+    background-color: #8b4513;
+    border-color: #8b4513;
+    border-radius: 1vh;
+    margin-top: 3vh;
+    transition:background-color 0.2s;  
+}
+.carro:hover {
+    background-color: #ac6a3c;
+    border-color: #ac6a3c;
+}
+#Comprar{
+    width: 25vh;
+    height: 6vh; 
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 1vh;
+    margin-top: 3vh;
+    transition:background-color 0.2s;    
+}
+#Comprar:hover{
+    background-color: #8b4513;
+    border-color: #8b4513 ;
+    border: 1px #8b4513 solid;
+}
+#Precio ,.pe{
+    color: #ffd737;
+    font-size: x-large;
+}
+#Cantidad_vendido,#Disponibles{
+    color: black;
+}
+.icono svg{
+    margin-bottom: -1vh;
+}
+.icono_dos svg{
+    margin-bottom: -0.2vh;
+}
+
+  
