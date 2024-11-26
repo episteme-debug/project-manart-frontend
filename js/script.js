@@ -7,10 +7,10 @@ fetch("http://localhost:8080/getProductoById/10", {
     if (!response.ok) {
       throw new Error(`Error: ${response.status}`);
     }
-    return response.json(); // Asume que el servidor devuelve JSON
+    return response.json(); 
   })
   .then(data => {
-    console.log(data); // Muestra la respuesta en la consola stockProducto  nombre_Probucto
+    console.log(data); 
     document.getElementById("nombre_Probucto").textContent = data.nombreProducto;
     document.getElementById("nombreProbucto").textContent = data.nombreProducto;
     document.getElementById("Precio").textContent = data.precioProducto;
