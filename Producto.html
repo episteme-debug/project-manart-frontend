@@ -32,51 +32,33 @@
                 <a href="http://">Productos</a>
             </div>
         </div>
-    </header>
-    <main>
-        <div id="Producto">
-            <div class="Contenedor_imagen">
-            <img id="imagen" src="" alt="Imagen del producto"></div>
-            <div id="magnifier"></div>
-            <div id="Informacion_productos">
-                <p id="nombreProbucto"></p>
-                <p>Decripcion: <span id="Descripcion"></span>
-                </p>
-                <p class="pe">$<span id="Precio"></span></p>
-                <!--   <p>Region: <span></span></p>
+        </header>
+        <main>
+   <div id="Producto">
+    <img id="imagen" src="" alt="Imagen del producto">
+      <div id="Informacion_productos">
+    <p id="nombreProbucto"></p>
+    <p class="pe">$<span id="Precio"></span></p>
+    <p>Decripcion: <span id="Descripcion"></span>
+    </p>
+   <!--   <p>Region: <span></span></p>
     <p>Material: <span></span></p> -->
-                <p class="icono"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height=4vh
-                        width=4vh><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path fill="#FFD43B"
-                            d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
-                    </svg>
-                    <span id="Cantidad_vendido">1</span> Cantidad Vendidas
-                </p>
-                <p class="icono_dos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height=3.5vh
-                        width=3.5vh><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path fill="#FFD43B"
-                            d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
-                    </svg>
-                    <span id="Disponibles">2</span> Disponibles
-                </p>
-                <div class="catidad_Carrito">
-                    <div id="cantidad">
-                        <button class="masymenos">-</button><input type="text" min="0" class="masymenos-input" readonly
-                            placeholder="1">
-                            <button class="masymenos1">+</button>
-                    </div>
-                    <div id="botones_Añadir_comprar">
-                        <button class="carro">Añadir al Carrito</button>
-                </div>
-            </div>
-            <button id="Comprar">Comprar Ahora</button>
-        </div>
+    <p class="icono"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height= 4vh  width= 4vh><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#FFD43B" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> 
+        <span id="Cantidad_vendido" >1</span> Cantidad Vendidas</p>
+    <p class="icono_dos"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height= 3.5vh  width= 3.5vh><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#FFD43B" d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+          <span id="Disponibles">2</span> Disponibles</p>
+    <div >
+        <button class="masymenos">-</button><input type="text" min="0" class="masymenos-input"readonly placeholder="1"><button class="masymenos1">+</button>
+      <div id="botones_Añadir_comprar">
+          <button class="carro">Añadir al Carrito</button> <button id="Comprar">Comprar Ahora</button>
+      </div>
+     </div>
+</div>
 
-    </main>
-    <script src="js/script.js"></script>
-    <script src="js/botonemym.js"></script>
-    <script src="js/Carrito.js"></script>
-    <script src="js/lupa.js"></script>
+</main>
+<script src="js/script.js"></script>
+<script src="js/botonemym.js"></script>
+
 </body>
 
 </html>
