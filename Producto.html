@@ -6,30 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Producto.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/actualizacionDOMProducto.js"></script>
     <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
     <title id="nombre_Probucto"> </title><!-- Cambiar a el nombre del producto seleccionado -->
 </head>
 
 <body>
-    <header>
-        <div class="img_buscador">
-            <img src="img/Manart_img.jpg" alt="">
-
-            <div id="is-relative">
-                <input type="text" placeholder="Buscar productos">
-                <span id="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height=4vh
-                        width=4vh><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-                    </svg>
-                </span>
+    <!--HEADER-->
+    <header class="header">
+        <div class="alerta">
+            <div class="container">
+                <p>La temporada de navidad ha traido nuevas promociones. ¡Bienvenidos!</p>
             </div>
-
-            <div id="links">
-                <a href="http://">Inicio</a>
-                <a href="http://">Region de Colombia</a>
-                <a href="http://">Productos</a>
+        </div>
+        <div class="container">
+            <div class="header-top">
+                <div class="container">
+                    <div class="input-busqueda">
+                        <input type="search" name="buscar" placeholder="Buscar Producto" class="campo-buscar">
+                        <button class="btn-buscar" aria-label="buscar">
+                            <img src="iconos/search.svg" alt="" class="ion-icon">
+                        </button>
+                    </div>
+                    <a href="" class="logo">
+                        <img src="img/logo.png" alt="" width="189" height="26">
+                    </a>
+                    <div class="acciones-header">
+                        <a class="acciones-header-btn" aria-label="logIn" href="signIn-signUp.html">
+                            <!--Icono-->
+                            <img src="iconos/person-outline.svg" alt="" class="ion-icon">
+                        </a>
+                        <button class="acciones-header-btn" aria-label="favoritos">
+                            <!--Icono-->
+                            <img src="iconos/star-outline.svg" class="ion-icon">
+                            <!--Tambien se especificará el numnero de favoritos medianteun span-->
+                            <span class="btn-insignia">0</span>
+                        </button>
+                        <button class="acciones-header-btn" aria-label="cartera">
+                            <!--Data o span (Valor total msegun los elemntos agregadops a la cartera)-->
+                            <data value="0" class="btn-texto">$0.00</data>
+                            <!--Icono-->
+                            <img src="iconos/bag-handle-outline.svg" class="ion-icon">
+                            <!--Span (Cantidad de elementos en la cartera)-->
+                            <span class="btn-insignia">0</span>
+                        </button>
+                    </div>
+                    <nav class="navbar">
+                        <ul class="navbar-lista">
+                            <li>
+                                <a href="" class="navbar-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="" class="navbar-link">Colección</a>
+                            </li>
+                            <li>
+                                <a href="" class="navbar-link">Ofertas</a>
+                            </li>
+                            <li>
+                                <a href="" class="navbar-link">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -66,14 +104,13 @@
                         <div id="botones_Añadir_comprar">
                             <button class="carro">Añadir al Carrito</button>
                         </div>
-                  
+
                     </div>
                     <button id="Comprar">Comprar Ahora</button>
                 </div>
             </div>
 
     </main>
-    <script src="js/getProductoById.js"></script>
     <script src="js/botonemym.js"></script>
     <script src="js/lupa.js"></script>
 </body>

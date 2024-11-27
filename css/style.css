@@ -30,7 +30,9 @@ img,
 span,
 input,
 button,
-ion-icon { display: block; }
+.ion-icon {
+    display: block;
+}
 
 .h1 {
     font-size: 3.8rem;
@@ -61,8 +63,9 @@ li {
     padding: 0;
 }
 
-ion-icon {
-    font-size: 1.8rem;
+.ion-icon {
+    /* font-size: 1.8rem */
+    height: 30px;
     transition: color 0.3s ease;
 }
 
@@ -129,7 +132,8 @@ button {
     box-sizing: inherit;
 }
 
-.header .container, .hero .container{
+.header .container,
+.hero .container {
     padding-inline: 15px;
 }
 
@@ -144,8 +148,8 @@ button {
 }
 
 .alerta {
-    background-color: hsl(60, 68%, 85%);
-    color: black;
+    background-color: hsl(148, 20%, 38%);
+    color: white;
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -173,6 +177,7 @@ button {
 .header .input-busqueda,
 .acciones-header .navbar {
     display: block;
+    position: relative;
 }
 
 .campo-buscar {
@@ -194,10 +199,10 @@ button {
     position: absolute;
     transform: translateY(-50%);
     top: 48%;
-    margin-left: -45px;
+    right: 10px;
 }
 
-.btn-buscar ion-icon {
+.btn-buscar .ion-icon {
     color: hsl(0, 1%, 15%);
 }
 
@@ -405,27 +410,27 @@ a {
 }
 
 /*COMPRA*/
-.ulproducto{
+.ulproducto {
     width: auto;
-    position:relative;
+    position: relative;
 }
 
 
-.scrollbar-item-producto{
+.scrollbar-item-producto {
     box-shadow: 2px 4px 2px rgb(161, 159, 159);
     min-width: 20%;
     height: 65vh;
 }
 
-.compra .container{
+.compra .container {
     padding-inline: 35px;
 }
 
-.compra .tiene-scrollbar{
+.compra .tiene-scrollbar {
     gap: 45px;
 }
 
-.compra-card{
+.compra-card {
     height: 100%;
     width: 100%;
 
@@ -450,7 +455,7 @@ a {
     height: 65%;
 }
 
-.img-cover{
+.img-cover {
     width: 100%;
     height: 100%;
     size: auto;
@@ -480,10 +485,10 @@ a {
     padding: 12px;
     border-radius: 50%;
     transition: 0.25s ease;
+    color: black;
 }
 
 .compra-card .btn-accion:is(:hover, :focus) {
-    background-color: black;
     color: white;
 }
 
@@ -521,6 +526,7 @@ a {
     font-weight: 500;
     margin-block-end: 8px;
     transition: 0.25s ease;
+    cursor: pointer;
 }
 
 .compra-card .card-titulo:is(:hover, :focus) {
@@ -534,9 +540,12 @@ a {
     font-size: 15px;
 }
 
-.valuacion-contenedor ion-icon{
-    font-size: 1.3rem;
+.valuacion-contenedor img {
+    height: 15px;
+    color: hsl(148, 20%, 38%);
+
 }
+
 .compra-card .valuacion-texto {
     font-size: .9rem;
     font-weight: 400;
@@ -554,6 +563,6 @@ a {
     border-radius: 3px;
 }
 
-.img-holder{
+.img-holder {
     background-color: #888;
 }

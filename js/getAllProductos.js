@@ -34,10 +34,10 @@ $(document).ready(function (params) {
                         <span class="descuento">${(porcentajeDescuento * 100)}%</span>
                         <div class="card-acciones">
                             <button class="btn-accion" aria-label="añadir-al-carrito">
-                                <ion-icon name="bag-handle-outline"></ion-icon>
+                                <img src="iconos/bag-handle-outline.svg" alt="" class="ion-icon">
                             </button>
                             <button class="btn-accion" aria-label="añadir-a-favoritos">
-                                <ion-icon name="heart-outline"></ion-icon>
+                                <img src="iconos/star-outline.svg" alt="" class="ion-icon">
                             </button>
                         </div>
                     </div>
@@ -47,11 +47,11 @@ $(document).ready(function (params) {
                             <del class="del">$${producto.precioProducto.toFixed(2)}</del>
                         </div>
                         <h3>
-                            <a class="card-titulo" href="#" id="${idProducto}>${producto.nombreProducto}</a>
+                            <a class="card-titulo" id="${idProducto}">${producto.nombreProducto}</a>
                         </h3>
                         <div class="card-valuacion">
                             <div class="valuacion-contenedor">
-                                ${'<ion-icon name="star"></ion-icon>'.repeat(5)}
+                                ${'<img src="iconos/star.svg" alt="" class="ion-icon">'.repeat(5)}
                             </div>
                             <p class="valuacion-texto">500 visitas</p>
                         </div>

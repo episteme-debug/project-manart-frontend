@@ -1,23 +1,28 @@
-$(document).ready(function (params) {
-  fetch("http://localhost:8080/getProductoById/10", {
-    method: 'GET'
-  })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Error: ${response.status}`);
-      }
-      return response.json(); // Asume que el servidor devuelve JSON
+
+$(document).ready(function () {
+  $(document).on('click', '.card-titulo', function (event) {
+    event.preventDefault();
+    var idProducto = $(this).attr('id');
+    peticionFetch(idProducto);
+  });
+
+  function peticionFetch(idProducto) {
+    fetch(`http://localhost:8080/getProductoById/${idProducto}`, {
+      method: 'GET'
     })
-    .then(data => {
-      console.log(data); // Muestra la respuesta en la consola stockProducto  nombre_Probucto
-      document.getElementById("nombre_Probucto").textContent = data.nombreProducto;
-      document.getElementById("nombreProbucto").textContent = data.nombreProducto;
-      document.getElementById("Precio").textContent = data.precioProducto;
-      document.getElementById("Descripcion").textContent = data.descripcionProducto;
-      document.getElementById("Disponibles").textContent = data.stockProducto;
-      document.getElementById("imagen").src = data.imagenProducto;
-    })
-    .catch(error => {
-      console.error('Error al obtener el producto:', error);
-    });
-})
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Error: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        localStorage.setItem("productoById", JSON.stringify(data));
+        window.location.href = "Producto.html";
+      })
+      .catch(error => {
+        console.error('Error al obtener el producto:', error);
+      });
+  }
+});
+

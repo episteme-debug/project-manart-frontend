@@ -17,6 +17,7 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/getCategoriaProducto.js"></script>
     <script src="js/getAllProductos.js"></script>
+    <script src="js/getProductoById.js"></script>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                     <div class="input-busqueda">
                         <input type="search" name="buscar" placeholder="Buscar Producto" class="campo-buscar">
                         <button class="btn-buscar" aria-label="buscar">
-                            <ion-icon name="search"></ion-icon>
+                            <img src="iconos/search.svg" alt="" class="ion-icon">
                         </button>
                     </div>
                     <a href="" class="logo">
@@ -42,11 +43,11 @@
                     <div class="acciones-header">
                         <a class="acciones-header-btn" aria-label="logIn" href="signIn-signUp.html">
                             <!--Icono-->
-                            <ion-icon name="person-outline"></ion-icon>
+                            <img src="iconos/person-outline.svg" alt="" class="ion-icon">
                         </a>
                         <button class="acciones-header-btn" aria-label="favoritos">
                             <!--Icono-->
-                            <ion-icon name="star-outline"></ion-icon>
+                            <img src="iconos/star-outline.svg" class="ion-icon">
                             <!--Tambien se especificará el numnero de favoritos medianteun span-->
                             <span class="btn-insignia">0</span>
                         </button>
@@ -54,7 +55,7 @@
                             <!--Data o span (Valor total msegun los elemntos agregadops a la cartera)-->
                             <data value="0" class="btn-texto">$0.00</data>
                             <!--Icono-->
-                            <ion-icon name="bag-handle-outline"></ion-icon>
+                            <img src="iconos/bag-handle-outline.svg" class="ion-icon">
                             <!--Span (Cantidad de elementos en la cartera)-->
                             <span class="btn-insignia">0</span>
                         </button>
@@ -155,7 +156,7 @@
             <section class="seccion categorias" id="categorias" aria-label="categorias" data-section>
                 <div class="container">
                     <ul class="categorias-lista tiene-bg-image">
-                        <li>
+<!--                         <li>
                             <div class="categorias-card">
                                 <h2 class="h2 card-titulo">Colección de Verano</h2>
 
@@ -167,7 +168,7 @@
 
 
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
 
@@ -181,12 +182,12 @@
 
                         <a href="" class="btn-link">
                             <span>Todos nuestros productos</span>
-                            <ion-icon name="arrow-forward"></ion-icon>
+                            <img src="iconos/arrow-forward.svg" alt="" class="ion-icon">
                         </a>
                     </div>
 
                     <ul class="tiene-scrollbar ulproducto">
-<!--                         <li class="scrollbar-item-producto" id="1">
+                        <li class="scrollbar-item-producto" id="1">
                             <div class="compra-card">
 
                                 <div class="card-banner img-holder">
@@ -197,11 +198,11 @@
 
                                     <div class="card-acciones">
                                         <button class="btn-accion" aria-label="añadir-al-carrito">
-                                            <ion-icon name="bag-handle-outline"></ion-icon>
+                                            <img src="iconos/bag-handle-outline.svg" alt="" class="ion-icon">
                                         </button>
 
                                         <button class="btn-accion" aria-label="añadir-a-favoritos">
-                                            <ion-icon name="star-outline"></ion-icon>
+                                            <img src="iconos/star-outline.svg" alt="" class="ion-icon">
                                         </button>
 
                                     </div>
@@ -215,23 +216,19 @@
                                     </div>
 
                                     <h3>
-                                        <a href="" class="card-titulo">Mochila Wayuu</a>
+                                        <p class="card-titulo">Mochila Wayuu</p>
                                     </h3>
 
                                     <div class="card-valuacion">
                                         <div class="valuacion-contenedor">
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
-                                            <ion-icon name="star"></ion-icon>
+                                            <img src="iconos/star.svg" alt="" class="ion-icon">
                                         </div>
 
                                         <p class="valuacion-texto">1000 vistas</p>
                                     </div>
                                 </div>
                             </div>
-                        </li> -->
+                        </li>
                         
                     </ul>
                 </div>
@@ -240,8 +237,6 @@
         </article>
 
     </main>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
