@@ -1,6 +1,6 @@
 
 
-fetch("http://localhost:8080/getProductoById/5", {
+fetch("http://localhost:8080/getProductoById/1", {
   method: 'GET'
 })
   .then(response => {

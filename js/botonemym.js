@@ -4,7 +4,7 @@ $(document).ready(function () {
         $input.attr('type', 'number');
         let currentValue = parseInt($input.val() || $input.attr('placeholder')) || 0;
 
-        if (currentValue > 0) {
+        if (currentValue > 1) {
             $input.val(currentValue - 1);
         }
 

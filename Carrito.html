@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="css/Carrito.css">
+    <title>Carrito</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="tabla_Producto">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="Producto">PRODUCTO</th>
+                        <th class="catidad">CANTIDAD</th>
+                        <th class="Total_p">TOTAL PARCIAL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="Infomacion_Producto">
+                        <td class="Descripcion_imagen">
+                            <div class="imagen">
+                                <img src="img/ProductoMochilasWayuu.jpeg" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur </p>
+                        </td>
+
+                        <td class="Centar_cantidad">
+                            <div id="cantidad">
+                                <button class="masymenos">-</button><input type="text" min="0" class="masymenos-input"
+                                    readonly placeholder="1"><button class="masymenos1">+</button>
+                            </div>
+                        </td>
+                        <td class="Total_producto">
+                            <p>$<span id="Total1">123.3993</span></p>
+                        </td>
+                    </tr>
+                    <tr class="Infomacion_Producto">
+                        <td class="Descripcion_imagen">
+                            <div class="imagen">
+                                <img src="img/ProductoTagua.jpg" alt="">
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur </p>
+
+                        </td>
+
+                        <td class="Centar_cantidad">
+                            <div id="cantidad">
+                                <button class="masymenos">-</button><input type="text" min="0" class="masymenos-input"
+                                    readonly placeholder="1"><button class="masymenos1">+</button>
+                            </div>
+                        </td>
+                        <td class="Total_producto">
+                            <p>$<span id="Total2">423.3993</span></p>
+                        </td>
+                    </tr>
+                    <tr class="Infomacion_Producto">
+                        <td class="Descripcion_imagen">
+                            <div class="imagen">
+                                <img src="img/ProductoMaseta.jpg" alt="">
+                            </div>
+                            <p>Lorem, ipsum dolor sit amet consectetur </p>
+
+                        </td>
+
+                        <td class="Centar_cantidad">
+                            <div id="cantidad">
+                                <button class="masymenos">-</button><input type="text" min="0" class="masymenos-input"
+                                    readonly placeholder="1"><button class="masymenos1">+</button>
+                            </div>
+                        </td>
+                        <td class="Total_producto">
+                            <p>$<span id="Total3">223.399</span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="Total_final">
+            <div class="Borde_cupon">
+                <div class="Cupones">
+                    <p>Codigo del cupon</p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="icono"
+                        width="6%"
+                        height="6%"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />
+                    </svg>
+                </div>
+                <div id="cupon" style="display: none;">
+                    <input type="text" placeholder="Codigo del cupon">
+                    <button>Aplicar</button>
+                </div>
+            </div>
+            <div class="Borde_Parcial">
+                <div class="Flex_Pacial">
+                    <p>Total parcial</p>
+                    <p>$<span id="Total_pacial"></span></p>
+                </div>
+            </div>
+            <div class="Borde_Total">
+                <div class="Flex_Total">
+                    <p>Total </p>
+                    <p>$<span id="Total_real"></span></p>
+                </div>
+            </div>
+            <div class="Boton_compra">
+                <button type="button" class="Compra_final">Finalizar compra</button>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+<script src="js/Carrito.js"></script>
+
+</html>
