@@ -8,6 +8,14 @@ body {
     font-family: "Urbanist", sans-serif;
 }
 
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 p,
 h1,
 h2,
@@ -17,10 +25,12 @@ h4 {
     padding: 0;
 }
 
+a,
+img,
 span,
-ion-icon {
-    display: block;
-}
+input,
+button,
+ion-icon { display: block; }
 
 .h1 {
     font-size: 3.8rem;
@@ -46,14 +56,13 @@ a {
 }
 
 li {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
 ion-icon {
     font-size: 1.8rem;
-
     transition: color 0.3s ease;
 }
 
@@ -104,7 +113,7 @@ button {
     cursor: pointer;
 }
 
-.btn-link{
+.btn-link {
     font-size: 1.2rem;
     color: hsl(0, 1%, 15%);
     font-weight: 600;
@@ -113,18 +122,21 @@ button {
     gap: 3px;
     transition: 0.25 ease;
 }
+
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
 
+.header .container, .hero .container{
+    padding-inline: 15px;
+}
+
 
 /*HEADER*/
 
-.container {
-    padding-inline: 15px;
-}
+
 
 .header {
     position: relative;
@@ -307,13 +319,14 @@ button {
 .tiene-scrollbar {
     display: flex;
     gap: 15px;
-    overflow-x: auto;
+    overflow-x: scroll;
     padding-block-end: 15px;
     margin-block-end: -15px;
     scroll-snap-type: inline mandatory;
 }
 
 .scrollbar-item {
+    overflow-x: auto;
     min-width: 100%;
     scroll-snap-type: start;
 }
@@ -347,7 +360,7 @@ button {
 .categorias-lista {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding-inline: 30px;
     padding-block: 30px;
     background-image: url(/img/categorias-fondo.jpg);
@@ -371,10 +384,11 @@ button {
 }
 
 
-.categorias-card h2, a{
+.categorias-card h2,
+a {
     z-index: 5;
 }
-/* Asegura que estén por encima de la imagen de fondo */
+
 .categorias-card .tiene-bg-image {
     position: absolute;
     top: 20%;
@@ -385,7 +399,161 @@ button {
     transition: 0.5 ease;
 }
 
-.categorias-card a{
+.categorias-card a {
     position: absolute;
     bottom: 5%;
+}
+
+/*COMPRA*/
+.ulproducto{
+    width: auto;
+    position:relative;
+}
+
+
+.scrollbar-item-producto{
+    box-shadow: 2px 4px 2px rgb(161, 159, 159);
+    min-width: 20%;
+    height: 65vh;
+}
+
+.compra .container{
+    padding-inline: 35px;
+}
+
+.compra .tiene-scrollbar{
+    gap: 45px;
+}
+
+.compra-card{
+    height: 100%;
+    width: 100%;
+
+}
+
+.compra .titulo-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-block-end: 50px;
+}
+
+.compra .btn-link:is(:hover, :focus) {
+    color: hsl(148, 20%, 38%);
+}
+
+.compra-card .card-banner {
+    position: relative;
+    overflow: hidden;
+    height: 65%;
+}
+
+.img-cover{
+    width: 100%;
+    height: 100%;
+    size: auto;
+    object-fit: cover;
+}
+
+.compra-card .descuento {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.compra-card .card-acciones {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    display: grid;
+    gap: 10px;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.compra-card .btn-accion {
+    background-color: white;
+    font-size: 24px;
+    padding: 12px;
+    border-radius: 50%;
+    transition: 0.25s ease;
+}
+
+.compra-card .btn-accion:is(:hover, :focus) {
+    background-color: black;
+    color: white;
+}
+
+.compra-card:is(:hover, :focus-within) .card-acciones {
+    opacity: 1;
+    transform: translate(-20px, -50%);
+}
+
+.compra-card .card-contenido {
+    padding-block: 20px;
+    text-align: center;
+}
+
+.compra-card :is(.precio, .card-valuacion, .valuacion-contenedor) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.compra-card .del {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.compra-card .precio .span {
+    color: black;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.compra-card .card-titulo {
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-block-end: 8px;
+    transition: 0.25s ease;
+}
+
+.compra-card .card-titulo:is(:hover, :focus) {
+    text-decoration: underline;
+    color: hsl(148, 20%, 38%);
+}
+
+.compra-card .valuacion-contenedor {
+    gap: 2px;
+    color: hsl(148, 20%, 38%);
+    font-size: 15px;
+}
+
+.valuacion-contenedor ion-icon{
+    font-size: 1.3rem;
+}
+.compra-card .valuacion-texto {
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+}
+
+.descuento {
+    max-width: max-content;
+    background-color: hsl(148, 20%, 38%);
+    color: white;
+    font-weight: 700;
+    padding-block: 4px;
+    padding-inline: 14px;
+    border-radius: 3px;
+}
+
+.img-holder{
+    background-color: #888;
 }
