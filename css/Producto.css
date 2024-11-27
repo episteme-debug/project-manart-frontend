@@ -13,7 +13,6 @@ body{
 .img_buscador img{
     height: 23vh;
     width: 23vh;
-    margin-left: 3vh;
 }
 .img_buscador input{
     height: 7vh;
@@ -50,76 +49,115 @@ div#is-relative{
 }
 main{
     width: auto;
-    height: 100vh;
+    height: 660PX;
     margin: 4vh;
     display: flex;
     box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.2);
     background-color:rgba(231, 226, 226, 0.774);
+    border-radius: 10px;
 }
 #nombreProbucto{
-    font-size: xx-large;
+    font-size: xxx-large;
     color: black;
+    font-family: serif;
 }
 #Producto{ 
     display: flex;
     color: gray;
 }
-#Producto img{
-   margin: 5vh;
-   width: 75vh;
-   height: 85vh;
-   border: 1px gray solid;
-   border-radius: 10px;
+.Contenedor_imagen {
+    width: 280%; 
+    height: auto; 
+    position: relative; 
+    overflow: hidden; 
 }
+
+.Contenedor_imagen #imagen {
+    width: 100%;
+    height: 90%; 
+    object-fit: cover; 
+    border-top-left-radius: 10px;
+}
+
 #Informacion_productos{
-    margin-left: 10vh;
+    margin-left: 5vh;
     font-size: large;
     margin-right: 6vh;
 }
-.masymenos ,.masymenos1 {
-    width: 5vh;
-    height: 4.5vh;
+.masymenos  {
+    width: 36px;
+    height: 40px;
     background-color: white;
-    border: 2px gray solid;
+    border: 2px white solid;
+    font-size: larger;
+    border-radius: 10vh;
     transition:background-color 0.2s;
+
+}
+.masymenos1{
+    width: 25px;
+    height: 40px;
+    background-color: white;
+    border: 2px white solid;
+    font-size: larger;
+    border-radius: 10vh;
+    transition:background-color 0.2s;
+}
+#cantidad{
+    border: 1px gray solid;
+    width: 110px;
+    background-color: white;
+    border-radius: 10vh;
+    margin-top: 3%;
+    margin-right: 1vh;
+    height: 40px;
 }
 .masymenos-input{
     width: 5vh;
     height: 3.6vh;
+    font-size: larger;
     background-color: white;
-    border: 2px gray solid;
+    border: 2px white solid;
     text-align: center;
 }
  .carro{
-    width: 25vh;
-    height: 6vh; 
+    width: 35vh;
+    height: 8vh; 
     background-color: #8b4513;
     border-color: #8b4513;
-    border-radius: 1vh;
+    color: white;
+    border-radius: 50px;
     margin-top: 3vh;
     transition:background-color 0.2s;  
 }
 .carro:hover {
-    background-color: #ac6a3c;
-    border-color: #ac6a3c;
+    background-color: #6d3208;
+    border-color: #6d3208;
 }
 #Comprar{
-    width: 25vh;
-    height: 6vh; 
+    width: 60vh;
+    height: 7vh; 
     background-color: white;
-    border: 1px black solid;
-    border-radius: 1vh;
+    border: 1px #8b4513 solid;
+    color: #8b4513;
+    border-radius: 50px;
     margin-top: 3vh;
+    font-size: medium;
     transition:background-color 0.2s;    
 }
 #Comprar:hover{
     background-color: #8b4513;
     border-color: #8b4513 ;
     border: 1px #8b4513 solid;
+    color: white;
 }
 #Precio ,.pe{
     color: #ffd737;
-    font-size: x-large;
+    font-size: xx-large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom:5px rgb(211, 208, 208) solid;
+    border-radius: 3px;
+    width: 20px;
 }
 #Cantidad_vendido,#Disponibles{
     color: black;
@@ -130,5 +168,51 @@ main{
 .icono_dos svg{
     margin-bottom: -0.2vh;
 }
+.Producto {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #imagen {
+    width: 100%; 
+    max-width: 600px;
+  }
+  
+  #magnifier {
+    position: absolute;
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: none;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    pointer-events: none; 
+  }
+  .catidad_Carrito{
+    display: flex;
+    align-items: center;
+  }
 
+::-webkit-scrollbar {
+    width: 10px; 
+    height: 10px; 
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px; 
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  
   

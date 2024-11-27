@@ -1,21 +1,18 @@
 document.getElementById("formulario").addEventListener("submit", function (event) {
-    event.preventDefault(); // Evita que se recargue la página
+    event.preventDefault(); 
 
-    // Obtiene los valores de los campos del formulario
     const nombre = document.getElementById("nombre").value.trim();
     const descripcion = document.getElementById("descripcion").value.trim();
     const estadoSeleccionado = document.getElementById("estado").value;
-    const estado = estadoSeleccionado === "Activo" ? 1 : 0; // Convierte a 1 o 0
+    const estado = estadoSeleccionado === "Activo" ? 1 : 0; 
     const imagen = document.getElementById("imagen").value.trim();
     const orden = parseInt(document.getElementById("orden").value, 10);
 
-    // Validación básica (opcional)
     if (!nombre || !descripcion || !imagen || isNaN(orden)) {
         alert("Por favor, completa todos los campos correctamente.");
         return;
     }
 
-    // Envío de datos al servidor
     fetch("http://localhost:8080/saveCategoria", {
         method: "POST",
         headers: {

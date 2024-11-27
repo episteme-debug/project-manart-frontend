@@ -1,8 +1,12 @@
 main{
     width: 100vh;
     height: 80vh;
-    background-color: gray;
+    background-color: rgb(248, 243, 176);
     margin-left: 55vh;
+    border-radius: 5px;
+}
+label{
+    text-align: start;
 }
 h1{
     text-align: center;
@@ -18,10 +22,26 @@ h1{
     font-size: x-large;
 }
 #formulario input{
-    width: 88vh;
+    width: 80vh;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 2%;
 }
-#formulario button{
-    margin-left: 40vh;   
+#estado{
+    width: 81vh;
+    height: 35px;
+    border-radius: 5px;
+    font-size: large;
+    margin-bottom: 2%;
+}
+ .Registrar{
+    text-align: center;
+   
+}
+.Registrar button{
     background-color: #ffd737;
     border-color: #ffd737;
+    width: 25vh;
+    height: 40px;
+    border-radius: 5px;
 }
