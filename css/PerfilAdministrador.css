@@ -1,9 +1,12 @@
+body{
+    align-content: center;
+    justify-items: center;
+}
 main{
-    width: 100vh;
-    height: 80vh;
-    background-color: rgb(248, 243, 176);
-    margin-left: 55vh;
-    border-radius: 5px;
+    width: 50%;
+    height: 550px;
+    background-color: beige;
+    border-radius:20px;
 }
 label{
     text-align: start;
@@ -16,6 +19,7 @@ h1{
 }
 #formulario  {
   align-content: center;
+  justify-items: center;
   margin: 5vh;
 }
 #formulario label{
@@ -24,11 +28,15 @@ h1{
 #formulario input{
     width: 80vh;
     height: 30px;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-bottom: 2%;
+    
+}
+#formulario select{
+    border-radius: 15px;
 }
 #estado{
-    width: 81vh;
+    width: 80vh;
     height: 35px;
     border-radius: 5px;
     font-size: large;
@@ -38,10 +46,71 @@ h1{
     text-align: center;
    
 }
-.Registrar button{
+.Subir_categoria{
     background-color: #ffd737;
     border-color: #ffd737;
     width: 25vh;
     height: 40px;
     border-radius: 5px;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition:background-color 0.2s;
+}
+.Subir_categoria:hover{
+    background-color: #ddb515;
+    border-color: #ddb515; 
+}
+/* reponsive de telefono pequeño */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        background-color: red;
+    }
+    #formulario label{
+        font-size:small;
+    }
+    #formulario input{
+        width: 160%;
+        height: 30px;
+        border-radius: 15px;
+        margin-bottom: 2%;
+        
+    }
+    #estado{
+        width: 165%;
+        height: 35px;
+        border-radius: 5px;
+        font-size: large;
+        margin-bottom: 2%;
+    }
+    main{
+        width: 80%;
+        height: 450px;
+        background-color: beige;
+        border-radius:20px;
+        
+    }
+    h2{
+       margin-left: 25%;
+    }
+    #formulario  {
+        align-content: center;
+        justify-items: center;
+        margin-left: -23%;
+      }
+      .Subir_categoria{
+        background-color: #ffd737;
+        border-color: #ffd737;
+        width: 25vh;
+        height: 40px;
+        border-radius: 5px;
+        font-size: larger;
+        margin-left: 50%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        transition:background-color 0.2s;
+    }
+    .Subir_categoria:hover{
+        background-color: #ddb515;
+        border-color: #ddb515; 
+    }
 }
