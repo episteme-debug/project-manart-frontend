@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso Manart</title>
+
+    <!--FUENTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,700&family=Playfair+Display:ital,wght@0,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet"><!--Tipografía de la página-->
+
+    <!--ICONOS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/120545e2bd.js" crossorigin="anonymous"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/toast.css">
+    <link rel="stylesheet" href="css/sign.css">
+
+    <!--SCRIPT-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/signIn.js"></script>
+    <script src="js/efectoSign.js"></script>
+    <script src="js/signUp.js"></script>
+</head>
+
+<body>
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <h2>¡¡Bienvenido Nuevamente!!</h2>
+                <p>Para ingresar inicia sesión con tus datos.</p>
+                <input type="button" value="Iniciar sesión" id="sign-in">
+            </div>
+
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Crear una Cuenta</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-github'></i>
+                    <i class='bx bxl-linkedin'></i>
+                </div>
+                <p>O usa tu email para registrarte</p>
+                <div class="form" action="" method="">
+
+                    <div class="opcion">
+                        <label>Ingrese sus apellidos : </label><br>
+                        <input type="text" placeholder="Apellidos" name="apellidos" class="input_apellido"><br>
+
+                    </div>
+                    <div class="opcion">
+                        <label>Ingrese sus nombres : </label><br>
+                        <input type="text" placeholder="Nombres completos" name="nombres" class="input_nombre"><br>
+
+                    </div>
+
+                    <div class="opcion">
+                        <label>Ingrese su teléfono : </label>
+                        <input type="number" placeholder="Número de teléfono" name="telefono"
+                            class="input_telefono"><br>
+
+                    </div>
+
+                    <div class="opcion">
+                        <label>Ingrese su email : </label>
+                        <input type="text" placeholder="Email" name="email" class="input_email"><br>
+
+                    </div>
+
+                    <div class="opcion">
+                        <label>Ingrese su contraseña : </label>
+                        <input type="password" placeholder="Password" name="password" class="input_password"><br>
+                        <label>Eres : </label><br>
+                    </div>
+
+                    <div class="opcionMultiple">
+                        <div class="opcion-tipoUsuario">
+                            <input type="radio" id="artesano" name="tipoUsuario" class="input_tipo_usuario"><br>
+                            <p>Artesano</p>
+                        </div>
+                        <div class="opcion-tipoUsuario">
+                            <input type="radio" id="comprador" name="tipoUsuario" class="input_tipo_usuario"><br>
+                            <p>Comprador</p>
+                        </div>
+                        <div class="opcion-tipoUsuario">
+                            <input type="radio" id="organizador" name="tipoUsuario" class="input_tipo_usuario"><br>
+                            <p>Organizador</p>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Registrarse" class="btn_registro">
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <h2>¿Te gustaría participar?</h2>
+                <p>Para unirte a nuestra comunidad por favor regístrate con tus datos.</p>
+                <input type="button" value="Registrarse" id="sign-up">
+            </div>
+
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar Sesión</h2>
+                <div class="icons">
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-github'></i>
+                    <i class='bx bxl-linkedin'></i>
+                </div>
+                <p>O iniciar sesión con una cuenta</p>
+                <div class="form">
+
+                    <label>
+                        Ingrese su correo electrónico :
+                    </label><br>
+                    <i class='bx bx-envelope'></i>
+                    <input type="email" placeholder="Correo elctronico" class="log_in_email">
+
+                    <label>
+                        Ingrese su contraseña :
+                    </label><br>
+                    <i class='bx bx-lock-alt'></i>
+                    <input type="password" placeholder="Contraseña" class="log_in_password">
+                    <input type="submit" value="Iniciar Sesión" class="btn_log_in">
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="container-toast" id="list toast">
+        <!--         <div class="toast toast-success">
+            <i class="fa fa-check-circle toast-icon"></i>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quisquam sequi iusto accusantium rerum.
+                Dolorem recusandae laborum voluptate quo sequi distinctio, id earum nesciunt! Reiciendis nam earum
+                cumque impedit porro!</div>
+            <i class="fa fa-close"></i>
+        </div> -->
+    </div>
+
+</body>
+
+</html>

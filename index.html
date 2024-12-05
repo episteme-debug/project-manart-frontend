@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Manart Lista</title>
+
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--JAVASCRIPT-->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/getCategoriaProducto.js"></script>
+    <script src="js/getAllProductos.js"></script>
+    <script src="js/getProductoById.js"></script>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="header">
+        <div class="alerta">
+            <div class="container">
+                <p>La temporada de navidad ha traido nuevas promociones. ¡Bienvenidos!</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header-top">
+                <div class="container">
+                    <div class="input-busqueda">
+                        <input type="search" name="buscar" placeholder="Buscar Producto" class="campo-buscar">
+                        <button class="btn-buscar" aria-label="buscar">
+                            <img src="iconos/search.svg" alt="" class="ion-icon">
+                        </button>
+                    </div>
+                    <a href="" class="logo">
+                        <img src="img/logo.png" alt="" width="189" height="26">
+                    </a>
+                    <div class="acciones-header">
+                        <a class="acciones-header-btn" aria-label="logIn" href="signIn-signUp.html">
+                            <!--Icono-->
+                            <img src="iconos/person-outline.svg" alt="" class="ion-icon">
+                        </a>
+                        <button class="acciones-header-btn" aria-label="favoritos">
+                            <!--Icono-->
+                            <img src="iconos/star-outline.svg" class="ion-icon">
+                            <!--Tambien se especificará el numnero de favoritos medianteun span-->
+                            <span class="btn-insignia">0</span>
+                        </button>
+                        <button class="acciones-header-btn" aria-label="cartera">
+                            <!--Data o span (Valor total msegun los elemntos agregadops a la cartera)-->
+                            <data value="0" class="btn-texto">$0.00</data>
+                            <!--Icono-->
+                            <img src="iconos/bag-handle-outline.svg" class="ion-icon">
+                            <!--Span (Cantidad de elementos en la cartera)-->
+                            <span class="btn-insignia">0</span>
+                        </button>
+                    </div>
+                    <nav class="navbar">
+                        <ul class="navbar-lista">
+                            <li>
+                                <a href="" class="navbar-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="" class="navbar-link">Colección</a>
+                            </li>
+                            <li>
+                                <a href="" class="navbar-link">Ofertas</a>
+                            </li>
+                            <li>
+                                <a href="" class="navbar-link">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+
+            <!--HERO-->
+            <section class="seccion hero" id="home" aria-label="hero" data-section>
+                <div class="container">
+                    <ul class="tiene-scrollbar">
+                        <li class="scrollbar-item">
+                            <div class="hero-card tiene-bg-image" style="background-image: url(img/hero-banner1.jpg);">
+                                <div class="contenido-card">
+                                    <h1 class="h1 hero-titulo">
+                                        Artesanias hechas<br>
+                                        con el corazón
+                                    </h1>
+
+                                    <p class="hero-texto">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat animi maiores a
+                                        maxime voluptates eveniet, doloremque perspiciatis numquam voluptas consequuntur
+                                        fugit quisquam fuga dolor quo nulla veniam optio excepturi exercitationem!
+                                    </p>
+
+                                    <p class="precio"> Desde $5.000</p>
+
+                                    <a href="" class="btn btn-primary">¡Compra Ahora!</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="hero-card tiene-bg-image" style="background-image: url(img/hero-banner2.jpg);">
+                                <div class="contenido-card">
+                                    <h1 class="h1 hero-titulo">
+                                        Artesanias hechas<br>
+                                        con el corazón
+                                    </h1>
+
+                                    <p class="hero-texto">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat animi maiores a
+                                        maxime voluptates eveniet, doloremque perspiciatis numquam voluptas consequuntur
+                                        fugit quisquam fuga dolor quo nulla veniam optio excepturi exercitationem!
+                                    </p>
+
+                                    <p class="precio"> Desde $5.000</p>
+
+                                    <a href="" class="btn btn-primary">¡Compra Ahora!</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="scrollbar-item">
+                            <div class="hero-card tiene-bg-image" style="background-image: url(img/hero-banner3.jpg);">
+                                <div class="contenido-card">
+                                    <h1 class="h1 hero-titulo">
+                                        Artesanias hechas<br>
+                                        con el corazón
+                                    </h1>
+
+                                    <p class="hero-texto">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat animi maiores a
+                                        maxime voluptates eveniet, doloremque perspiciatis numquam voluptas consequuntur
+                                        fugit quisquam fuga dolor quo nulla veniam optio excepturi exercitationem!
+                                    </p>
+
+                                    <p class="precio"> Desde $5.000</p>
+
+                                    <a href="" class="btn btn-primary">¡Compra Ahora!</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <!--CATEGORIAS-->
+            <section class="seccion categorias" id="categorias" aria-label="categorias" data-section>
+                <div class="container">
+                    <ul class="categorias-lista tiene-bg-image">
+<!--                         <li>
+                            <div class="categorias-card">
+                                <h2 class="h2 card-titulo">Colección de Verano</h2>
+
+                                <a href="" class="btn-link">
+                                    <span class="span">Shop Now</span>
+
+                                </a>
+                                <div class="tiene-bg-image" style="background-image: url(img/vega.jpg);"></div>
+
+
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+
+            </section>
+
+            <!--COMPRA-->
+            <section class="seccion compra" id="compra" aria-label="compra" data-section>
+                <div class="container">
+                    <div class="titulo-contenedor">
+                        <h2 class="h2 seccion-titulo">Productos Destacados</h2>
+
+                        <a href="" class="btn-link">
+                            <span>Todos nuestros productos</span>
+                            <img src="iconos/arrow-forward.svg" alt="" class="ion-icon">
+                        </a>
+                    </div>
+
+                    <ul class="tiene-scrollbar ulproducto">
+                        <li class="scrollbar-item-producto" id="1">
+                            <div class="compra-card">
+
+                                <div class="card-banner img-holder">
+                                    <img src="/img/ProductoFique.jpg" alt="" loading="lazy"
+                                        class="img-cover">
+
+                                    <span class="descuento">20%</span>
+
+                                    <div class="card-acciones">
+                                        <button class="btn-accion" aria-label="añadir-al-carrito">
+                                            <img src="iconos/bag-handle-outline.svg" alt="" class="ion-icon">
+                                        </button>
+
+                                        <button class="btn-accion" aria-label="añadir-a-favoritos">
+                                            <img src="iconos/star-outline.svg" alt="" class="ion-icon">
+                                        </button>
+
+                                    </div>
+                                </div>
+
+                                <div class="card-contenido">
+
+                                    <div class="precio">
+                                        <del class="del">$50.900</del>
+                                        <span class="span">$30.990</span>
+                                    </div>
+
+                                    <h3>
+                                        <p class="card-titulo">Mochila Wayuu</p>
+                                    </h3>
+
+                                    <div class="card-valuacion">
+                                        <div class="valuacion-contenedor">
+                                            <img src="iconos/star.svg" alt="" class="ion-icon">
+                                        </div>
+
+                                        <p class="valuacion-texto">1000 vistas</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+</body>
+
+</html>
