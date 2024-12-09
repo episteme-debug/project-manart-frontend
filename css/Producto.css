@@ -312,7 +312,6 @@ div#is-relative{
     display: block;
     bottom: .5rem;
     right: -15.5rem;
-    
     user-select: none;
     cursor: pointer;
   }
@@ -365,9 +364,11 @@ main{
     margin-left: 5vh;
     font-size: large;
     margin-right: 6vh;
+    display: grid;
+    justify-content: center;
 }
 .masymenos  {
-    width: 36px;
+    width: 45px;
     height: 40px;
     background-color: white;
     border: 2px white solid;
@@ -377,7 +378,7 @@ main{
 
 }
 .masymenos1{
-    width: 25px;
+    width: 45px;
     height: 40px;
     background-color: white;
     border: 2px white solid;
@@ -386,17 +387,19 @@ main{
     transition:background-color 0.2s;
 }
 #cantidad{
+    display: flex;
+    justify-content: center;
     border: 1px gray solid;
     width: 110px;
     background-color: white;
     border-radius: 10vh;
     margin-top: 3%;
     margin-right: 1vh;
-    height: 40px;
+    height: 42px;
 }
 .masymenos-input{
     width: 5vh;
-    height: 3.6vh;
+    height: auto;
     font-size: larger;
     background-color: white;
     border: 2px white solid;
@@ -437,24 +440,33 @@ main{
     color: #ffd737;
     font-size: xx-large;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border-bottom:5px rgb(211, 208, 208) solid;
     border-radius: 3px;
-    width: 20px;
+    width: 200px;
+}
+.pe{
+    width: 130px;
+    display: flex;
+    height: 45px;
+    border-bottom:5px rgb(211, 208, 208) solid;
 }
 #Cantidad_vendido,#Disponibles{
     color: black;
+    margin-left: 1%;
+    margin-right: 1%;
 }
-.icono svg{
-    margin-bottom: -1vh;
+.icono{
+    display: flex;
+    align-content: center;
+
 }
-.icono_dos svg{
-    margin-bottom: -0.2vh;
+.icono_dos{
+    display: flex;
+    align-content: center;
 }
 .Producto {
     position: relative;
     display: inline-block;
   }
-  
   #imagen {
     width: 100%; 
     max-width: 600px;
@@ -475,6 +487,7 @@ main{
     display: flex;
     align-items: center;
   }
+
 
 ::-webkit-scrollbar {
     width: 10px; 
