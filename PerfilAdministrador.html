@@ -9,31 +9,31 @@
 </head>
 
 <body>
-    
+
     <main>
-        <form id="formulario">
+        <form id="formulario" enctype="multipart/form-data">
             <div class="texto">
                 <h1>Registrar Nueva Categoría</h1>
             </div>
             <label for="nombre">Nombre Categoría:</label>
-            <input type="text" id="nombre" required>
+            <input type="text" name="nombreCategoria" id="nombre" required>
 
             <label for="descripcion">Descripción de la Categoría:</label>
-            <input type="text" id="descripcion" required>
+            <input type="text" name="descripcionCategoria" id="descripcion" required>
 
             <label for="estado">Estado Categoría:</label>
-            <select id="estado" name="estado" required>
-                <option value="Activo">Activo</option>
-                <option value="Inactivo">Inactivo</option>
+            <select id="estado" name="estadoCategoria" required>
+                <option value="1">Activo</option>
+                <option value="0">Inactivo</option>
             </select>
             <label for="imagen">Imagen Categoría:</label>
-            <input type="text" id="imagen" placeholder="URL de la imagen" required>
+            <input type="file" name="imagenCategoria" id="imagen" placeholder="URL de la imagen" required>
             <label for="orden">Orden de Visualización:</label>
-            <input type="number" id="orden" min="0" max="6" required>
+            <input type="number" name="ordenVisualizacionCategoria" id="orden" min="0" max="6" required>
             <button type="submit" class="boton">Registrar</button>
         </form>
     </main>
-    <script src="js/Perfil.js"></script>
+    <script src="js/PostCateforiaProducto.js"></script>
     <script src="js/Carrito.js"></script>
 </body>
 
