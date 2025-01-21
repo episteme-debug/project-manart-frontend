@@ -65,4 +65,8 @@ document.getElementById("icono").addEventListener("click", function() {
     });
 
     actualizarTotales();
+     
+    $('#Eliminar').on('click', function(){
+        //la accion de elimianar no se puede hacer ya que se necesita eliminar con ub fech delect para que se elimine en la api y de hay la pagina se actualize :)
+    });
 });
