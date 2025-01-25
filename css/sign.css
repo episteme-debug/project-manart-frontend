@@ -1,102 +1,102 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    box-sizing : border-box;
+    padding    : 0;
+    margin     : 0;
     font-family: 'EB Garamond', serif;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-image: url(/img/logIn-fondo.jpg);
+    display          : flex;
+    align-items      : center;
+    justify-content  : center;
+    min-height       : 100vh;
+    background-image : url(/img/logIn-fondo.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size  : cover;
 }
 
 .container-form {
-    min-width: 70%;
-    min-height: 90vh;
-    display: flex;
+    min-width    : 70%;
+    min-height   : 90vh;
+    display      : flex;
     border-radius: 20px;
-    transition: all 1s ease;
-    margin: 10px;
+    transition   : all 1s ease;
+    margin       : 10px;
 
 }
 
 .information {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    background-color: #312C25;
-    border-top-left-radius: 20px;
+    width                    : 40%;
+    display                  : flex;
+    align-items              : center;
+    background-color         : #312C25;
+    border-top-left-radius   : 20px;
     border-bottom-left-radius: 20px;
-    min-height: 80vh;
+    min-height               : 80vh;
 }
 
 .info-childs {
-    width: 100%;
+    width  : 100%;
     padding: 30px;
 }
 
 .info-childs h2 {
-    font-size: 2.5rem;
-    color: white;
-    text-shadow: 4px 4px 4px #191613;
+    font-size     : 2.5rem;
+    color         : white;
+    text-shadow   : 4px 4px 4px #191613;
     letter-spacing: 2px;
 }
 
 .info-childs p {
     margin: 15px 0;
-    color: rgb(244, 227, 204);
+    color : rgb(244, 227, 204);
 }
 
 .info-childs input {
     background-color: #fff;
-    outline: none;
-    border: solid 2px #2A110E;
-    border-radius: 20px;
-    padding: 10px 20px;
-    color: #2A110E;
-    cursor: pointer;
-    transition: background-color .3s ease;
+    outline         : none;
+    border          : solid 2px #2A110E;
+    border-radius   : 20px;
+    padding         : 10px 20px;
+    color           : #2A110E;
+    cursor          : pointer;
+    transition      : background-color .3s ease;
 }
 
 .info-childs input:hover {
     background-color: #2A110E;
-    border: none;
-    color: #fff;
+    border          : none;
+    color           : #fff;
 }
 
 .form-information {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 56%;
-    text-align: center;
-    background-color: rgba(223, 201, 170, 0.5);
-    border-top-right-radius: 20px;
+    align-items               : center;
+    justify-content           : center;
+    display                   : flex;
+    width                     : 56%;
+    text-align                : center;
+    background-color          : rgba(223, 201, 170, 0.5);
+    border-top-right-radius   : 20px;
     border-bottom-right-radius: 20px;
-    min-height: 80vh;
-    padding: 2%;
+    min-height                : 80vh;
+    padding                   : 2%;
 }
 
 .form-information-childs {
-    min-height: 70vh;
-    padding: 2%;
-    width: 96%;
+    min-height      : 70vh;
+    padding         : 2%;
+    width           : 96%;
     background-color: #f2e0c7b3;
-    border-radius: 10px;
+    border-radius   : 10px;
 }
 
 .form-information-childs h2 {
-    color: #333;
+    color    : #333;
     font-size: 2rem;
 }
 
 .form-information-childs p {
-    color: #635649;
+    color      : #635649;
     font-weight: 600;
 }
 
@@ -107,57 +107,57 @@ body {
 .icons i {
     border-radius: 50%;
 
-    padding: 15px;
-    cursor: pointer;
-    color: #8f8473;
-    border: .5px solid #7a7163;
+    padding   : 15px;
+    cursor    : pointer;
+    color     : #8f8473;
+    border    : .5px solid #7a7163;
     transition: background-color 0.3s ease;
-    margin: 0 10px;
+    margin    : 0 10px;
 
 }
 
 .icons i:hover {
     background-color: #baaa94;
-    color: #fff;
+    color           : #fff;
 }
 
 .form {
     box-shadow: 2px 3px 10px rgb(231, 231, 231);
-    margin: 30px 0 0 0;
-    width: 98%;
-    padding: 2%;
+    margin    : 30px 0 0 0;
+    width     : 98%;
+    padding   : 2%;
     min-height: 50vh;
 }
 
-label{
-    width: 98%;
-    color: #333;
-    text-align:start;
+label {
+    width      : 98%;
+    color      : #333;
+    text-align : start;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size  : 1.2rem;
 }
 
-.opcion{
-    display: flex;
+.opcion {
+    display       : flex;
     flex-direction: column;
 }
 
-.opcionMultiple{
-    display: flex;
-    width: 100%;
+.opcionMultiple {
+    display        : flex;
+    width          : 100%;
     justify-content: space-around;
-    gap: 10px;
+    gap            : 10px;
 }
 
 input {
-    border-radius: 10px;
-    padding: 1.5%;
+    border-radius   : 10px;
+    padding         : 1.5%;
     background-color: white;
-    width: 90%;
-    margin-top: 2%;
-    margin-bottom: 3%;
-    border: none;
-    color: #333;
+    width           : 90%;
+    margin-top      : 2%;
+    margin-bottom   : 3%;
+    border          : none;
+    color           : #333;
 }
 
 
@@ -167,26 +167,26 @@ input {
 
 .form input[type="submit"] {
     background-color: #2A110E;
-    color: #fff;
-    border-radius: 20px;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-    margin-top: 10%;
-    transition: background-color 0.3s;
+    color           : #fff;
+    border-radius   : 20px;
+    padding         : 10px 15px;
+    border          : none;
+    cursor          : pointer;
+    margin-top      : 10%;
+    transition      : background-color 0.3s;
 }
 
 .form input[type="submit"]:hover {
     background-color: #fff;
-    color: #2A110E;
-    font-weight: bolder;
+    color           : #2A110E;
+    font-weight     : bolder;
 }
 
 .hide {
     /*     display:none; */
-    display: none;
-    position: absolute;
-    transform: translateY(0);
+    display   : none;
+    position  : absolute;
+    transform : translateY(0);
     transition: all 1s ease;
 }
 
@@ -203,23 +203,23 @@ input {
     }
 
     .container-form {
-        height: auto;
+        height        : auto;
         flex-direction: column;
     }
 
     .information {
-        width: 100%;
-        padding: 20%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 0px;
+        width                     : 100%;
+        padding                   : 20%;
+        border-top-left-radius    : 20px;
+        border-top-right-radius   : 20px;
+        border-bottom-left-radius : 0px;
         border-bottom-right-radius: opx;
     }
 
     .form-information {
-        width: 100%;
-        padding: 20px;
+        width                    : 100%;
+        padding                  : 20px;
         border-bottom-left-radius: 20px;
-        border-top-right-radius: 0;
+        border-top-right-radius  : 0;
     }
 }

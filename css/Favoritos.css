@@ -1,14 +1,5 @@
-body {
-    margin          : 0%;
-    padding         : 0%;
-    background-color: rgb(224, 216, 216);
-}
 
-header {
-    background-color: rebeccapurple;
-}
-
-h1 {
+#Favoritos {
     margin-left  : 5%;
     margin-bottom: 0%;
 }
@@ -26,13 +17,8 @@ section {
     border-bottom: 1px black solid;
 }
 
-div {
+#ContenedorProducto {
     margin-left: 1%;
-}
-
-p {
-    margin : 0%;
-    padding: 0%;
 }
 
 #imagenProducto {
@@ -66,3 +52,4 @@ p {
     color        : rgb(141, 202, 202);
     background   : none;
 }
+ 
