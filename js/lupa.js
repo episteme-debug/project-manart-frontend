@@ -73,6 +73,7 @@ function Favorito() {
 }
 let NumeroCar = 0;
 var producto = JSON.parse(localStorage.getItem("productoById"));
+
 $(".carro").on("click", function () {
   if (NumeroCar == 0) {
     NumeroCar += 1;
@@ -90,6 +91,7 @@ $(".carro").on("click", function () {
     });
   }
 });
+
 
 function Carrito() {
 if (NumeroCar == 1) {
