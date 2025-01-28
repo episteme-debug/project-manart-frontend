@@ -37,14 +37,12 @@ $(document).ready(function () {
         var iconBtn = $("<ion-icon></ion-icon>").attr("name", "arrow-forward");
         var divImagen = $("<div></div>").addClass("tiene-bg-image");
 
-        // Crear un contenedor de imagen vacío con id único
         var imagenContenedor = $("<img>")
           .attr("id", `imagen_${categoria.idCategoria}`)
           .attr("width", "100%")
           .attr("height", "100%")
           .css("display", "none");
 
-        // Añadir el contenedor de imagen al div
         divImagen.append(imagenContenedor);
         linkBtn.append(spanBtn, iconBtn);
         categoriaCard.append(tituloCard, linkBtn, divImagen);
