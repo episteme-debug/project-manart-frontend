@@ -1,25 +1,5 @@
 .container-toast {
     position: absolute;
-<<<<<<< HEAD
-    right: 10px;
-    top: 10px;
-    width: 25%;
-}
-
-.toast {
-    border: 1px solid black;
-    align-items: center;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 20px auto 20px;
-    padding: 10px;
-    width: 100%;
-    background-color: white;
-    border-radius: 5px;
-    min-height: 10vh;
-    opacity: 0;
-    font-weight: bolder;
-=======
     right   : 10px;
     top     : 10px;
     width   : 25%;
@@ -38,42 +18,25 @@
     min-height           : 10vh;
     opacity              : 0;
     font-weight          : bolder;
->>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .toast-success {
     border: 1px solid rgb(0, 128, 55);
-<<<<<<< HEAD
-    color: rgb(0, 128, 55);
-=======
     color : rgb(0, 128, 55);
->>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .toast-error {
     border: 1px solid rgb(146, 3, 3);
-<<<<<<< HEAD
-    color: rgb(146, 3, 3);
-=======
     color : rgb(146, 3, 3);
->>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .toast-warning {
     border: 1px solid rgb(236, 174, 30);
-<<<<<<< HEAD
-    color: rgb(236, 174, 30);
-}
-
-.toast-icon {
-    font-size: 20px;
-=======
     color : rgb(236, 174, 30);
 }
 
 .toast-icon {
     font-size     : 20px;
->>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     vertical-align: middle;
 }
 
