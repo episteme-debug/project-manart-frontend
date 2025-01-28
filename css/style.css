@@ -403,6 +403,9 @@ a {
     z-index   : 1;
     transition: 0.5 ease;
 }
+.categorias-card img{
+    height: 100%;
+}
 
 .categorias-card a {
     position: absolute;
