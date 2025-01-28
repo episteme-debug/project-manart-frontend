@@ -1,18 +1,31 @@
 html,
 body {
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     height: 100%;
     width: 100%;
+=======
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+    height     : 100%;
+    width      : 100%;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     font-family: "Urbanist", sans-serif;
 }
 
 *,
 *::before,
 *::after {
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
+=======
+    margin    : 0;
+    padding   : 0;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     box-sizing: border-box;
 }
 
@@ -21,7 +34,11 @@ h1,
 h2,
 h3,
 h4 {
+<<<<<<< HEAD
     margin: 0;
+=======
+    margin : 0;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     padding: 0;
 }
 
@@ -35,8 +52,13 @@ button,
 }
 
 .h1 {
+<<<<<<< HEAD
     font-size: 3.8rem;
     color: white;
+=======
+    font-size  : 3.8rem;
+    color      : white;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     font-weight: 600;
     line-height: 1.3;
 }
@@ -47,38 +69,64 @@ button,
 
 .h2,
 .h3 {
+<<<<<<< HEAD
     color: black;
+=======
+    color      : black;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     font-weight: 600;
     line-height: 1.3;
 }
 
 a {
     text-decoration: none;
+<<<<<<< HEAD
     color: inherit;
+=======
+    color          : inherit;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 li {
     list-style: none;
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
+=======
+    margin    : 0;
+    padding   : 0;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .ion-icon {
     /* font-size: 1.8rem */
+<<<<<<< HEAD
     height: 30px;
+=======
+    height    : 30px;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     transition: color 0.3s ease;
 }
 
 img {
+<<<<<<< HEAD
     height: auto;
+=======
+    height : auto;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     display: block;
 }
 
 button,
 input {
     background: none;
+<<<<<<< HEAD
     border: none;
     font: inherit;
+=======
+    border    : none;
+    font      : inherit;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 input {
@@ -90,22 +138,39 @@ input {
 }
 
 .tiene-bg-image {
+<<<<<<< HEAD
     background-repeat: no-repeat;
     background-size: cover;
+=======
+    background-repeat  : no-repeat;
+    background-size    : cover;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     background-position: center;
 }
 
 .btn {
+<<<<<<< HEAD
     font-weight: 600;
     max-width: max-content;
     padding: 20px 30px;
     border-radius: 3px;
     transition: 1s ease;
+=======
+    font-weight  : 600;
+    max-width    : max-content;
+    padding      : 20px 30px;
+    border-radius: 3px;
+    transition   : 1s ease;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .btn-primary {
     background-color: black;
+<<<<<<< HEAD
     color: white;
+=======
+    color           : white;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .btn-primary:is(:hover, :focus) {
@@ -117,6 +182,7 @@ button {
 }
 
 .btn-link {
+<<<<<<< HEAD
     font-size: 1.2rem;
     color: hsl(0, 1%, 15%);
     font-weight: 600;
@@ -124,6 +190,15 @@ button {
     align-items: center;
     gap: 3px;
     transition: 0.25 ease;
+=======
+    font-size  : 1.2rem;
+    color      : hsl(0, 1%, 15%);
+    font-weight: 600;
+    display    : flex;
+    align-items: center;
+    gap        : 3px;
+    transition : 0.25 ease;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 *,
@@ -143,12 +218,17 @@ button {
 
 
 .header {
+<<<<<<< HEAD
     position: relative;
+=======
+    position         : relative;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     padding-block-end: 60px;
 }
 
 .alerta {
     background-color: hsl(148, 20%, 38%);
+<<<<<<< HEAD
     color: white;
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -156,10 +236,20 @@ button {
     letter-spacing: 2px;
     text-align: center;
     padding-block: 15px;
+=======
+    color           : white;
+    font-size       : 1.2rem;
+    text-transform  : uppercase;
+    font-weight     : 700;
+    letter-spacing  : 2px;
+    text-align      : center;
+    padding-block   : 15px;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 
 }
 
 .header-top {
+<<<<<<< HEAD
     position: unset;
     padding-block: 26px 0;
     background-color: white;
@@ -172,16 +262,35 @@ button {
     align-items: center;
     background-color: white;
     gap: 20px;
+=======
+    position        : unset;
+    padding-block   : 26px 0;
+    background-color: white;
+    margin-bottom   : 30px;
+}
+
+.header-top .container {
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+    background-color: white;
+    gap             : 20px;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .header .input-busqueda,
 .acciones-header .navbar {
+<<<<<<< HEAD
     display: block;
+=======
+    display : block;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     position: relative;
 }
 
 .campo-buscar {
 
+<<<<<<< HEAD
     border: 2px solid hsl(148, 20%, 38%, 0.2);
     border-radius: 3px;
     padding: 10px 20px;
@@ -189,6 +298,15 @@ button {
     transition: 0.25s ease;
     font-size: 0.9rem;
     position: relative;
+=======
+    border            : 2px solid hsl(148, 20%, 38%, 0.2);
+    border-radius     : 3px;
+    padding           : 10px 20px;
+    padding-inline-end: 40px;
+    transition        : 0.25s ease;
+    font-size         : 0.9rem;
+    position          : relative;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .campo-buscar::placeholder {
@@ -196,10 +314,17 @@ button {
 }
 
 .btn-buscar {
+<<<<<<< HEAD
     position: absolute;
     transform: translateY(-50%);
     top: 48%;
     right: 10px;
+=======
+    position : absolute;
+    transform: translateY(-50%);
+    top      : 48%;
+    right    : 10px;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .btn-buscar .ion-icon {
@@ -211,8 +336,13 @@ button {
 }
 
 .acciones-header {
+<<<<<<< HEAD
     display: flex;
     gap: 40px;
+=======
+    display    : flex;
+    gap        : 40px;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     align-items: center;
 }
 
@@ -221,6 +351,7 @@ button {
 }
 
 .acciones-header-btn .btn-insignia {
+<<<<<<< HEAD
     position: absolute;
     top: 0;
     right: -10px;
@@ -236,6 +367,23 @@ button {
     display: flex;
     align-items: center;
     gap: 10px;
+=======
+    position        : absolute;
+    top             : 0;
+    right           : -10px;
+    background-color: black;
+    color           : white;
+    border-radius   : 20px;
+    min-width       : 18px;
+    height          : 18px;
+    vertical-align  : middle;
+}
+
+.acciones-header-btn:last-child {
+    display    : flex;
+    align-items: center;
+    gap        : 10px;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .acciones-header-btn data {
@@ -244,6 +392,7 @@ button {
 }
 
 .navbar {
+<<<<<<< HEAD
     position: absolute;
     bottom: 0;
     left: 0;
@@ -261,10 +410,30 @@ button {
 .navbar .navbar-link {
     color: black;
     font-size: 1.1rem;
+=======
+    position        : absolute;
+    bottom          : 0;
+    left            : 0;
+    width           : 100%;
+    background-color: white;
+    padding-block   : 18px;
+}
+
+.navbar .navbar-lista {
+    display        : flex;
+    justify-content: center;
+    gap            : 45px;
+}
+
+.navbar .navbar-link {
+    color      : black;
+    font-size  : 1.1rem;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     font-weight: 700;
 }
 
 .navbar .navbar-link {
+<<<<<<< HEAD
     color: black;
     font-size: 1.1rem;
     font-weight: 700;
@@ -281,6 +450,24 @@ button {
     background-color: black;
     transition: transform 0.25s ease;
     transform: scaleX(0);
+=======
+    color      : black;
+    font-size  : 1.1rem;
+    font-weight: 700;
+    position   : relative;
+}
+
+.navbar .navbar-link::after {
+    content         : '';
+    position        : absolute;
+    bottom          : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 1.5px;
+    background-color: black;
+    transition      : transform 0.25s ease;
+    transform       : scaleX(0);
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     transform-origin: left;
 }
 
@@ -291,21 +478,34 @@ button {
 
 /*Hero*/
 .hero {
+<<<<<<< HEAD
     margin-top: 0;
+=======
+    margin-top : 0;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     padding-top: 0;
 }
 
 .hero-card {
     background-color: hsl(0, 0%, 88%);
+<<<<<<< HEAD
     padding: 80px 90px;
 }
 
 .tiene-scrollbar {
     margin: 0;
+=======
+    padding         : 80px 90px;
+}
+
+.tiene-scrollbar {
+    margin : 0;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     padding: 0;
 }
 
 .hero-texto {
+<<<<<<< HEAD
     font-size: 1.2rem;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -318,10 +518,25 @@ button {
     font-size: 1.3rem;
     color: white;
     font-weight: 600;
+=======
+    font-size       : 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color           : white;
+    margin-block    : 20px 20px;
+    padding         : 1%;
+    max-width       : 38ch;
+}
+
+.hero .precio {
+    font-size       : 1.3rem;
+    color           : white;
+    font-weight     : 600;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     margin-block-end: 40px;
 }
 
 .tiene-scrollbar {
+<<<<<<< HEAD
     display: flex;
     gap: 15px;
     overflow-x: scroll;
@@ -333,11 +548,28 @@ button {
 .scrollbar-item {
     overflow-x: auto;
     min-width: 100%;
+=======
+    display          : flex;
+    gap              : 15px;
+    overflow-x       : scroll;
+    padding-block-end: 15px;
+    margin-block-end : -15px;
+    scroll-snap-type : inline mandatory;
+}
+
+.scrollbar-item {
+    overflow-x      : auto;
+    min-width       : 100%;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     scroll-snap-type: start;
 }
 
 .tiene-scrollbar::-webkit-scrollbar {
+<<<<<<< HEAD
     width: 16px;
+=======
+    width : 16px;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     height: 16px;
 }
 
@@ -346,9 +578,15 @@ button {
 }
 
 .tiene-scrollbar::-webkit-scrollbar-thumb {
+<<<<<<< HEAD
     background: #888;
     border-radius: 8px;
     border: 3px solid #f1f1f1;
+=======
+    background   : #888;
+    border-radius: 8px;
+    border       : 3px solid #f1f1f1;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .tiene-scrollbar::-webkit-scrollbar-thumb:hover {
@@ -363,6 +601,7 @@ button {
 }
 
 .categorias-lista {
+<<<<<<< HEAD
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(4, 1fr);
@@ -370,10 +609,20 @@ button {
     padding-block: 30px;
     background-image: url(/img/categorias-fondo.jpg);
     background-color: rgba(255, 255, 255, 0.2);
+=======
+    display              : grid;
+    gap                  : 30px;
+    grid-template-columns: repeat(4, 1fr);
+    padding-inline       : 30px;
+    padding-block        : 30px;
+    background-image     : url(/img/categorias-fondo.jpg);
+    background-color     : rgba(255, 255, 255, 0.2);
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     background-blend-mode: overlay;
 }
 
 .categorias-card {
+<<<<<<< HEAD
     background-color: white;
     min-height: 400px;
     padding: 30px 40px;
@@ -382,6 +631,16 @@ button {
     flex-direction: column;
     position: relative;
     box-shadow: 2px 2px 4px rgb(133, 131, 131);
+=======
+    background-color : white;
+    min-height       : 400px;
+    padding          : 30px 40px;
+    padding-block-end: 30px;
+    display          : flex;
+    flex-direction   : column;
+    position         : relative;
+    box-shadow       : 2px 2px 4px rgb(133, 131, 131);
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .categorias-card .card-titulo {
@@ -395,31 +654,53 @@ a {
 }
 
 .categorias-card .tiene-bg-image {
+<<<<<<< HEAD
     position: absolute;
     top: 20%;
     right: 10%;
     bottom: 20%;
     left: 10%;
     z-index: 1;
+=======
+    position  : absolute;
+    top       : 20%;
+    right     : 10%;
+    bottom    : 20%;
+    left      : 10%;
+    z-index   : 1;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     transition: 0.5 ease;
 }
 
 .categorias-card a {
     position: absolute;
+<<<<<<< HEAD
     bottom: 5%;
+=======
+    bottom  : 5%;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 /*COMPRA*/
 .ulproducto {
+<<<<<<< HEAD
     width: auto;
+=======
+    width   : auto;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     position: relative;
 }
 
 
 .scrollbar-item-producto {
     box-shadow: 2px 4px 2px rgb(161, 159, 159);
+<<<<<<< HEAD
     min-width: 20%;
     height: 65vh;
+=======
+    min-width : 20%;
+    height    : 65vh;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .compra .container {
@@ -432,16 +713,28 @@ a {
 
 .compra-card {
     height: 100%;
+<<<<<<< HEAD
     width: 100%;
+=======
+    width : 100%;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 
 }
 
 .compra .titulo-contenedor {
+<<<<<<< HEAD
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+=======
+    display         : flex;
+    flex-wrap       : wrap;
+    justify-content : space-between;
+    align-items     : center;
+    gap             : 10px;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     margin-block-end: 50px;
 }
 
@@ -452,6 +745,7 @@ a {
 .compra-card .card-banner {
     position: relative;
     overflow: hidden;
+<<<<<<< HEAD
     height: 65%;
 }
 
@@ -459,11 +753,21 @@ a {
     width: 100%;
     height: 100%;
     size: auto;
+=======
+    height  : 65%;
+}
+
+.img-cover {
+    width     : 100%;
+    height    : 100%;
+    size      : auto;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     object-fit: cover;
 }
 
 .compra-card .descuento {
     position: absolute;
+<<<<<<< HEAD
     top: 20px;
     left: 20px;
 }
@@ -476,16 +780,38 @@ a {
     display: grid;
     gap: 10px;
     opacity: 0;
+=======
+    top     : 20px;
+    left    : 20px;
+}
+
+.compra-card .card-acciones {
+    position  : absolute;
+    top       : 50%;
+    right     : 0;
+    transform : translate(0, -50%);
+    display   : grid;
+    gap       : 10px;
+    opacity   : 0;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     transition: 0.5s ease;
 }
 
 .compra-card .btn-accion {
     background-color: white;
+<<<<<<< HEAD
     font-size: 24px;
     padding: 12px;
     border-radius: 50%;
     transition: 0.25s ease;
     color: black;
+=======
+    font-size       : 24px;
+    padding         : 12px;
+    border-radius   : 50%;
+    transition      : 0.25s ease;
+    color           : black;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .compra-card .btn-accion:is(:hover, :focus) {
@@ -493,12 +819,17 @@ a {
 }
 
 .compra-card:is(:hover, :focus-within) .card-acciones {
+<<<<<<< HEAD
     opacity: 1;
+=======
+    opacity  : 1;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     transform: translate(-20px, -50%);
 }
 
 .compra-card .card-contenido {
     padding-block: 20px;
+<<<<<<< HEAD
     text-align: center;
 }
 
@@ -511,10 +842,25 @@ a {
 
 .compra-card .del {
     font-size: 1.1rem;
+=======
+    text-align   : center;
+}
+
+.compra-card :is(.precio, .card-valuacion, .valuacion-contenedor) {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    gap            : 5px;
+}
+
+.compra-card .del {
+    font-size  : 1.1rem;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     font-weight: 400;
 }
 
 .compra-card .precio .span {
+<<<<<<< HEAD
     color: black;
     font-weight: 700;
     font-size: 1.2rem;
@@ -527,26 +873,54 @@ a {
     margin-block-end: 8px;
     transition: 0.25s ease;
     cursor: pointer;
+=======
+    color      : black;
+    font-weight: 700;
+    font-size  : 1.2rem;
+}
+
+.compra-card .card-titulo {
+    color           : black;
+    font-size       : 1rem;
+    font-weight     : 500;
+    margin-block-end: 8px;
+    transition      : 0.25s ease;
+    cursor          : pointer;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .compra-card .card-titulo:is(:hover, :focus) {
     text-decoration: underline;
+<<<<<<< HEAD
     color: hsl(148, 20%, 38%);
 }
 
 .compra-card .valuacion-contenedor {
     gap: 2px;
     color: hsl(148, 20%, 38%);
+=======
+    color          : hsl(148, 20%, 38%);
+}
+
+.compra-card .valuacion-contenedor {
+    gap      : 2px;
+    color    : hsl(148, 20%, 38%);
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     font-size: 15px;
 }
 
 .valuacion-contenedor img {
     height: 15px;
+<<<<<<< HEAD
     color: hsl(148, 20%, 38%);
+=======
+    color : hsl(148, 20%, 38%);
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 
 }
 
 .compra-card .valuacion-texto {
+<<<<<<< HEAD
     font-size: .9rem;
     font-weight: 400;
     line-height: 1;
@@ -561,6 +935,22 @@ a {
     padding-block: 4px;
     padding-inline: 14px;
     border-radius: 3px;
+=======
+    font-size  : .9rem;
+    font-weight: 400;
+    line-height: 1;
+    color      : #555;
+}
+
+.descuento {
+    max-width       : max-content;
+    background-color: hsl(148, 20%, 38%);
+    color           : white;
+    font-weight     : 700;
+    padding-block   : 4px;
+    padding-inline  : 14px;
+    border-radius   : 3px;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .img-holder {

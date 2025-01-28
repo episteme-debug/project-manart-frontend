@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/PerfilAdministrador.css">
     <title>Nueva Categoria</title>
 </head>
+
 <body>
-    <header>
-        <h1>Registrar Nueva Categoría</h1>
-    </header>
+
     <main>
-        <form id="formulario">
-            <h2>Sube una Categoría</h2>
-            <label for="nombre">Nombre Categoría:</label><br>
-            <input type="text" id="nombre" required><br>
+        <form id="formulario" enctype="multipart/form-data">
+            <div class="texto">
+                <h1>Registrar Nueva Categoría</h1>
+            </div>
+            <label for="nombre">Nombre Categoría:</label>
+            <input type="text" name="nombreCategoria" id="nombre" required>
 
-            <label for="descripcion">Descripción de la Categoría:</label><br>
-            <input type="text" id="descripcion" required><br>
+            <label for="descripcion">Descripción de la Categoría:</label>
+            <input type="text" name="descripcionCategoria" id="descripcion" required>
 
-            <label for="estado">Estado Categoría:</label><br>
-            <select id="estado" name="estado" required><br>
-                <option value="Activo">Activo</option>
-                <option value="Inactivo">Inactivo</option>
+            <label for="estado">Estado Categoría:</label>
+            <select id="estado" name="estadoCategoria" required>
+                <option value="1">Activo</option>
+                <option value="0">Inactivo</option>
             </select>
-            <br>
-            <label for="imagen">Imagen Categoría:</label><br>
-            <input type="text" id="imagen" placeholder="URL de la imagen" required><br>
-
-            <label for="orden">Orden de Visualización:</label><br>
-            <input type="number" id="orden" min="0" max="6" required><br>
-            <br>
-            <div class="Registrar">
-            <button type="submit">Registrar</button>
-        </div>
+            <label for="imagen">Imagen Categoría:</label>
+            <input type="file" name="imagenCategoria" id="imagen" placeholder="URL de la imagen" required>
+            <label for="orden">Orden de Visualización:</label>
+            <input type="number" name="ordenVisualizacionCategoria" id="orden" min="0" max="6" required>
+            <button type="submit" class="boton">Registrar</button>
         </form>
     </main>
-    <script src="js/Perfil.js"></script>
+    <script src="js/PostCateforiaProducto.js"></script>
     <script src="js/Carrito.js"></script>
 </body>
+
 </html>

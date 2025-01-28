@@ -36,15 +36,25 @@
                             <!--Icono-->
                             <img src="iconos/person-outline.svg" alt="" class="ion-icon">
                         </a>
+<<<<<<< HEAD
                         <button class="acciones-header-btn" aria-label="favoritos">
+=======
+                        <button onclick="Favorito()" class="acciones-header-btn" aria-label="favoritos">
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
                             <!--Icono-->
                             <img src="iconos/star-outline.svg" class="ion-icon">
                             <!--Tambien se especificará el numnero de favoritos medianteun span-->
                             <span class="btn-insignia">0</span>
                         </button>
+<<<<<<< HEAD
                         <button class="acciones-header-btn" aria-label="cartera">
                             <!--Data o span (Valor total msegun los elemntos agregadops a la cartera)-->
                             <data value="0" class="btn-texto">$0.00</data>
+=======
+                        <button onclick="Carrito()" class="acciones-header-btn" id="Carrito" aria-label="cartera">
+                            <!--Data o span (Valor total msegun los elemntos agregadops a la cartera)-->
+                            <data value="0" class="btn-texto"></data>
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
                             <!--Icono-->
                             <img src="iconos/bag-handle-outline.svg" class="ion-icon">
                             <!--Span (Cantidad de elementos en la cartera)-->
@@ -73,11 +83,11 @@
     </header>
     <main>
         <div id="Producto">
-            <img id="imagen" src="" alt="Imagen del producto">
+            <img id="imagen" src="img/categoriaJoyeria.jpg" alt="Imagen del producto">
             <div id="Informacion_productos">
                 <p id="nombreProbucto"></p>
                 <p class="pe">$<span id="Precio"></span></p>
-                <p>Decripcion: <span id="Descripcion"></span>
+                <p>Decripcion: <span id="Descripcion">!</span>
                 </p>
                 <!--   <p>Region: <span></span></p>
     <p>Material: <span></span></p> -->
@@ -93,7 +103,7 @@
                         <path fill="#FFD43B"
                             d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z" />
                     </svg>
-                    <span id="Disponibles">2</span> Disponibles
+                    <span id="Disponibles"></span> 
                 </p>
                 <div>
                     <div class="catidad_Carrito">
@@ -104,6 +114,17 @@
                         <div id="botones_Añadir_comprar">
                             <button class="carro">Añadir al Carrito</button>
                         </div>
+<<<<<<< HEAD
+=======
+                        <div id="PosicionStra">
+                            <button id="estrella" class="acciones-header-btn" aria-label="favoritos">
+                                <!--Icono-->
+                                <img src="iconos/star-outline.svg" id="icono" class="ion-icon">
+                                <!--Tambien se especificará el numnero de favoritos medianteun span-->
+                            </button>
+                        </div>
+
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 
                     </div>
                     <button id="Comprar">Comprar Ahora</button>
@@ -113,6 +134,8 @@
     </main>
     <script src="js/botonemym.js"></script>
     <script src="js/lupa.js"></script>
+    <script src="js/getProductoById.js"></script>
+
 </body>
 
 </html>

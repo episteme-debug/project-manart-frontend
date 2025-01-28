@@ -1,11 +1,18 @@
 * {
+<<<<<<< HEAD
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+=======
+    box-sizing : border-box;
+    padding    : 0;
+    margin     : 0;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     font-family: 'EB Garamond', serif;
 }
 
 body {
+<<<<<<< HEAD
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,10 +29,29 @@ body {
     border-radius: 20px;
     transition: all 1s ease;
     margin: 10px;
+=======
+    display          : flex;
+    align-items      : center;
+    justify-content  : center;
+    min-height       : 100vh;
+    background-image : url(/img/logIn-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size  : cover;
+}
+
+.container-form {
+    min-width    : 70%;
+    min-height   : 90vh;
+    display      : flex;
+    border-radius: 20px;
+    transition   : all 1s ease;
+    margin       : 10px;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 
 }
 
 .information {
+<<<<<<< HEAD
     width: 40%;
     display: flex;
     align-items: center;
@@ -37,23 +63,47 @@ body {
 
 .info-childs {
     width: 100%;
+=======
+    width                    : 40%;
+    display                  : flex;
+    align-items              : center;
+    background-color         : #312C25;
+    border-top-left-radius   : 20px;
+    border-bottom-left-radius: 20px;
+    min-height               : 80vh;
+}
+
+.info-childs {
+    width  : 100%;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     padding: 30px;
 }
 
 .info-childs h2 {
+<<<<<<< HEAD
     font-size: 2.5rem;
     color: white;
     text-shadow: 4px 4px 4px #191613;
+=======
+    font-size     : 2.5rem;
+    color         : white;
+    text-shadow   : 4px 4px 4px #191613;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     letter-spacing: 2px;
 }
 
 .info-childs p {
     margin: 15px 0;
+<<<<<<< HEAD
     color: rgb(244, 227, 204);
+=======
+    color : rgb(244, 227, 204);
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .info-childs input {
     background-color: #fff;
+<<<<<<< HEAD
     outline: none;
     border: solid 2px #2A110E;
     border-radius: 20px;
@@ -61,10 +111,20 @@ body {
     color: #2A110E;
     cursor: pointer;
     transition: background-color .3s ease;
+=======
+    outline         : none;
+    border          : solid 2px #2A110E;
+    border-radius   : 20px;
+    padding         : 10px 20px;
+    color           : #2A110E;
+    cursor          : pointer;
+    transition      : background-color .3s ease;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .info-childs input:hover {
     background-color: #2A110E;
+<<<<<<< HEAD
     border: none;
     color: #fff;
 }
@@ -92,11 +152,44 @@ body {
 
 .form-information-childs h2 {
     color: #333;
+=======
+    border          : none;
+    color           : #fff;
+}
+
+.form-information {
+    align-items               : center;
+    justify-content           : center;
+    display                   : flex;
+    width                     : 56%;
+    text-align                : center;
+    background-color          : rgba(223, 201, 170, 0.5);
+    border-top-right-radius   : 20px;
+    border-bottom-right-radius: 20px;
+    min-height                : 80vh;
+    padding                   : 2%;
+}
+
+.form-information-childs {
+    min-height      : 70vh;
+    padding         : 2%;
+    width           : 96%;
+    background-color: #f2e0c7b3;
+    border-radius   : 10px;
+}
+
+.form-information-childs h2 {
+    color    : #333;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     font-size: 2rem;
 }
 
 .form-information-childs p {
+<<<<<<< HEAD
     color: #635649;
+=======
+    color      : #635649;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     font-weight: 600;
 }
 
@@ -107,22 +200,36 @@ body {
 .icons i {
     border-radius: 50%;
 
+<<<<<<< HEAD
     padding: 15px;
     cursor: pointer;
     color: #8f8473;
     border: .5px solid #7a7163;
     transition: background-color 0.3s ease;
     margin: 0 10px;
+=======
+    padding   : 15px;
+    cursor    : pointer;
+    color     : #8f8473;
+    border    : .5px solid #7a7163;
+    transition: background-color 0.3s ease;
+    margin    : 0 10px;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 
 }
 
 .icons i:hover {
     background-color: #baaa94;
+<<<<<<< HEAD
     color: #fff;
+=======
+    color           : #fff;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .form {
     box-shadow: 2px 3px 10px rgb(231, 231, 231);
+<<<<<<< HEAD
     margin: 30px 0 0 0;
     width: 98%;
     padding: 2%;
@@ -158,6 +265,43 @@ input {
     margin-bottom: 3%;
     border: none;
     color: #333;
+=======
+    margin    : 30px 0 0 0;
+    width     : 98%;
+    padding   : 2%;
+    min-height: 50vh;
+}
+
+label {
+    width      : 98%;
+    color      : #333;
+    text-align : start;
+    font-weight: 700;
+    font-size  : 1.2rem;
+}
+
+.opcion {
+    display       : flex;
+    flex-direction: column;
+}
+
+.opcionMultiple {
+    display        : flex;
+    width          : 100%;
+    justify-content: space-around;
+    gap            : 10px;
+}
+
+input {
+    border-radius   : 10px;
+    padding         : 1.5%;
+    background-color: white;
+    width           : 90%;
+    margin-top      : 2%;
+    margin-bottom   : 3%;
+    border          : none;
+    color           : #333;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 
@@ -167,6 +311,7 @@ input {
 
 .form input[type="submit"] {
     background-color: #2A110E;
+<<<<<<< HEAD
     color: #fff;
     border-radius: 20px;
     padding: 10px 15px;
@@ -174,19 +319,39 @@ input {
     cursor: pointer;
     margin-top: 10%;
     transition: background-color 0.3s;
+=======
+    color           : #fff;
+    border-radius   : 20px;
+    padding         : 10px 15px;
+    border          : none;
+    cursor          : pointer;
+    margin-top      : 10%;
+    transition      : background-color 0.3s;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .form input[type="submit"]:hover {
     background-color: #fff;
+<<<<<<< HEAD
     color: #2A110E;
     font-weight: bolder;
+=======
+    color           : #2A110E;
+    font-weight     : bolder;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
 }
 
 .hide {
     /*     display:none; */
+<<<<<<< HEAD
     display: none;
     position: absolute;
     transform: translateY(0);
+=======
+    display   : none;
+    position  : absolute;
+    transform : translateY(0);
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     transition: all 1s ease;
 }
 
@@ -203,23 +368,42 @@ input {
     }
 
     .container-form {
+<<<<<<< HEAD
         height: auto;
+=======
+        height        : auto;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
         flex-direction: column;
     }
 
     .information {
+<<<<<<< HEAD
         width: 100%;
         padding: 20%;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         border-bottom-left-radius: 0px;
+=======
+        width                     : 100%;
+        padding                   : 20%;
+        border-top-left-radius    : 20px;
+        border-top-right-radius   : 20px;
+        border-bottom-left-radius : 0px;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
         border-bottom-right-radius: opx;
     }
 
     .form-information {
+<<<<<<< HEAD
         width: 100%;
         padding: 20px;
         border-bottom-left-radius: 20px;
         border-top-right-radius: 0;
+=======
+        width                    : 100%;
+        padding                  : 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius  : 0;
+>>>>>>> 311239852621fc34d870d30ddcf6c27b4c62d615
     }
 }
