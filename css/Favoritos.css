@@ -1,0 +1,55 @@
+
+#Favoritos {
+    margin-left  : 5%;
+    margin-bottom: 0%;
+}
+
+#Contenedor {
+    background-color: white;
+    margin-left     : 5%;
+    margin-right    : 5%;
+    height          : auto;
+    border-radius   : 2px;
+}
+
+section {
+    display      : flex;
+    border-bottom: 1px black solid;
+}
+
+#ContenedorProducto {
+    margin-left: 1%;
+}
+
+#imagenProducto {
+    border-radius: 2px;
+}
+
+#nombreProducto {
+    font-size    : x-large;
+    margin-bottom: 3%;
+}
+
+#nombreArtesano {
+    font-size    : large;
+    margin-bottom: 3%;
+}
+
+#PrecioAnterio {
+    text-decoration: line-through;
+    font-size      : small;
+}
+
+#Precio {
+    font-size    : xx-large;
+    margin-bottom: 3%;
+}
+
+#eliminar {
+    font-size    : medium;
+    margin-bottom: 2%;
+    border       : none;
+    color        : rgb(141, 202, 202);
+    background   : none;
+}
+ 
