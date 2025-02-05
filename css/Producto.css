@@ -379,7 +379,7 @@ main {
     justify-content: center;
 }
 
-.masymenos {
+.disminuir {
     width           : 45px;
     height          : 40px;
     background-color: white;
@@ -390,7 +390,7 @@ main {
 
 }
 
-.masymenos1 {
+.aumentar {
     width           : 45px;
     height          : 40px;
     background-color: white;
@@ -412,7 +412,7 @@ main {
     height          : 42px;
 }
 
-.masymenos-input {
+.Cantidad-input {
     width           : 5vh;
     height          : auto;
     font-size       : larger;

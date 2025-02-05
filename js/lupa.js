@@ -1,3 +1,4 @@
+// funcion de la lupa del la imagen del produto
 $(document).ready(function () {
   $("#imagen").on("click", function () {
     const modalHTML = `
@@ -49,7 +50,7 @@ $(document).ready(function () {
     });
   });
 });
-
+// funcion de la estrella 
 let NumeroFav = 0;
 $("#estrella").on("click", function () {
   let icono = $("#icono").attr("src");
@@ -71,9 +72,10 @@ function Favorito() {
   window.location.href = "http://127.0.0.1:5501/Favoritos.html";
   }
 }
+// envio del id
 let NumeroCar = 0;
 var producto = JSON.parse(localStorage.getItem("productoById"));
-
+// funcion de el carrito
 $(".carro").on("click", function () {
   if (NumeroCar == 0) {
     NumeroCar += 1;
@@ -92,7 +94,7 @@ $(".carro").on("click", function () {
   }
 });
 
-
+// redirige a la pagina principal
 function Carrito() {
 if (NumeroCar == 1) {
   window.location.href = "http://127.0.0.1:5501/Carrito.html";

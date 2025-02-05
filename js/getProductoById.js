@@ -4,7 +4,6 @@ $(document).ready(function () {
     var idProducto = $(this).attr("id");
     peticionFetch(idProducto);
   });
-
   function peticionFetch(idProducto) {
     fetch(`http://localhost:8080/getProductoById/${idProducto}`, {
       method: "GET",
@@ -23,4 +22,4 @@ $(document).ready(function () {
         console.error("Error al obtener el producto:", error);
       });
   }
-});
+})

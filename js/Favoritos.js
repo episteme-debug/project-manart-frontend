@@ -1,12 +1,14 @@
+//trae contenedor con el mas y el numero
 const Contenedor = document.getElementById("Contenedor");
 const Agregar = document.getElementById("mas");
 let dato = localStorage.getItem("numero");
 dato = parseInt(dato);
 let btn = document.getElementsByClassName("btn-insignia")[0];
 btn.innerText = dato;
-
+// trae todo lo del id
 var producto = JSON.parse(localStorage.getItem("productoById"));
 
+//inserta un section con la informacion de los favoritos 
 if (producto) {
   const nuevo = document.createElement("section");
   nuevo.innerHTML = `
@@ -23,6 +25,7 @@ if (producto) {
 `;
   Contenedor.appendChild(nuevo);
 
+  //al eliminar se devuelve a la pagina inicial 
   const eliminar = nuevo.querySelector("#eliminar");
   eliminar.addEventListener("click", function () {
     btn.innerHTML = dato - 1;
@@ -31,4 +34,3 @@ if (producto) {
   });
 }
 
-console.log(dato);

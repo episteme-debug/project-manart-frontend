@@ -1,3 +1,4 @@
+// trae la informacion del formulario y lo hace con un from data 
 const formulario = document.getElementById("formulario");
 
 formulario.addEventListener("submit", function (event) {
@@ -9,6 +10,7 @@ formulario.addEventListener("submit", function (event) {
     method: "POST",
     body: formData,
   })
+  //muestra si hay error y si esta bien muestra la alerta
     .then((response) => response.text())
     .then((data) => {
       console.log("Categoría registrada:", data);

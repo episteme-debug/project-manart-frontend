@@ -18,10 +18,12 @@ document.getElementById("icono").addEventListener("click", function () {
   }
   alternar = !alternar;
 });
+
 // funcion del traer el producto
 var producto = JSON.parse(localStorage.getItem("productoById"));
 
 const Contenedor = document.getElementById("Contenedor");
+
 
 let dato = localStorage.getItem("numero");
 
@@ -43,19 +45,19 @@ if (producto) {
       </div>
     </td>
     <td>
-      <p>${producto.nombreProducto}</p>
+      <p class="Nombre_Producto" >${producto.nombreProducto}</p>
       <button class="link" id="Eliminar"><span>Eliminar</span></button>
     </td>
     <td class="Centar_cantidad">
       <div id="cantidad">
-        <button class="masymenos">-</button>
-        <input type="text" min="0" max="${producto.cantidadProducto}" class="masymenos-input"
+        <button  class="btn-cantidad disminuir">-</button>
+        <input type="text" min="0" max="${producto.stockProducto}" class="Cantidad-input"
           readonly placeholder="1">
-        <button class="masymenos1">+</button>
+        <button  class="btn-cantidad aumentar">+</button>
       </div>
     </td>
     <td class="Total_producto">
-      <span id="Total1">$${producto.precioProducto}</span>
+      <span id="Total1">${producto.precioProducto}</span>
     </td>
   `;
 
@@ -68,3 +70,72 @@ if (producto) {
     window.location.href = "http://127.0.0.1:5501/index.html";
   });
 }
+
+// insertar total parcial
+let Total_pacial = document.getElementById("Total_pacial");
+Total_pacial.textContent = producto.precioProducto;
+//total  real
+let Total_real = document.getElementById("Total_real");
+Total_real.textContent = producto.precioProducto;
+
+
+//Funcion de catidad de carrito
+// Lo del menos no fuvcionalet precioUnitario = producto.precioProducto; // Precio base del producto
+$(".disminuir").on("click", function () {
+  $(".Cantidad-input").removeAttr("readonly");
+
+  let cantidad = parseInt(
+    document.querySelector(".Cantidad-input").placeholder
+  );
+  if (cantidad > 1) {
+    cantidad--;
+    $(".Cantidad-input").attr("placeholder", cantidad);
+
+    let Total = document.getElementById("Total1");
+    let precioUnitario = producto.precioProducto;
+    let nuevo_Precio = precioUnitario * cantidad;
+
+    Total.innerText = nuevo_Precio.toFixed(); 
+    console.log(nuevo_Precio);
+    // insertar total parcial
+    let Total_pacial = document.getElementById("Total_pacial");
+    Total_pacial.textContent = nuevo_Precio;
+    
+    //total  real
+    let Total_real = document.getElementById("Total_real");
+    Total_real.textContent = nuevo_Precio;
+
+    
+$(".acciones-header-btn .btn-texto").text(nuevo_Precio);
+  }
+});
+
+$(".aumentar").on("click", function () {
+  $(".Cantidad-input").removeAttr("readonly");
+
+  let cantidad = parseInt(
+    document.querySelector(".Cantidad-input").placeholder
+  );
+  if (cantidad < producto.stockProducto) {
+    cantidad++;
+       $(".Cantidad-input").attr("placeholder", cantidad);
+
+    let Total = document.getElementById("Total1");
+    let precioUnitario = producto.precioProducto; 
+    let nuevo_Precio = precioUnitario * cantidad; 
+    Total.innerText = nuevo_Precio.toFixed();
+    console.log(nuevo_Precio);
+
+    // insertar total parcial
+    let Total_pacial = document.getElementById("Total_pacial");
+    Total_pacial.textContent = nuevo_Precio;
+
+    //total  real
+    let Total_real = document.getElementById("Total_real");
+    Total_real.textContent = nuevo_Precio;
+    console.log(producto.precioProducto);
+
+    
+$(".acciones-header-btn .btn-texto").text(nuevo_Precio);
+  }
+});
