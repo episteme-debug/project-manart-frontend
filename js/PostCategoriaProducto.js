@@ -14,7 +14,6 @@ formulario.addEventListener("submit", function (event) {
     .then((response) => response.text())
     .then((data) => {
       console.log("Categoría registrada:", data);
-      alert("Categoría registrada exitosamente.");
     })
     .catch((error) => {
       console.error("Error al registrar la categoría:", error);
